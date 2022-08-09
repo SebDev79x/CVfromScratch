@@ -1,5 +1,5 @@
 <?php 
-$dates = []
+$spanDates = []
 ?>
 
 <section class="sectionChrono">

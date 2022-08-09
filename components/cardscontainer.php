@@ -1,4 +1,3 @@
-<section style="height:500px;background-color:green">
-<?php include 'card.php'; ?>
-
+<section class="sectionCards" id="sectionCards">
+    <?php include 'card.php'; ?>   
 </section>

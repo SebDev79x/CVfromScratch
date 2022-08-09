@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-
     <!-- <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
  -->
     <link rel="shortcut icon" href="#">
@@ -19,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 
 <body>
@@ -40,17 +38,18 @@
         <?php include 'components/buttontotop.php'; ?>
         <!-- CARDS CONTAINER -->
         <?php include 'components/cardscontainer.php'; ?>
-    
         <!-- FOOTER -->
         <?php include 'components/footer.php'; ?>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="assets/js/domready.js"></script>
     <script src="assets/js/scrolltotop.js"></script>
     <script src="assets/js/scrollline.js"></script>
     <script src="assets/js/evaluations.js"></script>
     <script src="assets/js/hidenavbar.js"></script>
+    <script src="assets/js/card.js" type="module"></script>
+
     <script src="assets/js/tree.js" type="module"></script>
     <script src="assets/js/chrono.js" type="module"></script>
     <script src="assets/js/functions.js" type="module"></script>
