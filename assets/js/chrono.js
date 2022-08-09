@@ -17,6 +17,8 @@ const start = () => {
     console.log("start anim et firstDate", firstDate);
     addClass(lineChrono, 'transformLineChrono')
     addClassToElements(arrayElements, 'transformDates')
+    addClassToElements(arrayElements, 'opacityDates')
+
     boolState = true
 }
 
@@ -24,6 +26,8 @@ const end = () => {
     console.log("end anim");
     removeClass(lineChrono, 'transformLineChrono')
     removeClassFromElements(arrayElements, 'transformDates')
+    removeClassFromElements(arrayElements, 'opacityDates')
+
     boolState = false
 }
 

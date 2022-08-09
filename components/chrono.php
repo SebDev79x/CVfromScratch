@@ -1,50 +1,28 @@
-<?php
-$languages = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'PHP',
-    'Angular',
-    'React-Native',
-    'SQL',
-    'Truc'
-];
-$values = [80, 70, 60, 40, 40, 50, 50, 90];
+<?php 
+$dates = []
 ?>
-<section class="sectionChrono">
-<div class="datesAndLineContainer">
-</div> 
 
-<div>
-        <button id="btnChrono">CLIC</button>
-    </div>
-</section>
-<!-- <section class="sectionChrono">
+<section class="sectionChrono">
     <div class="datesAndLineContainer">
         <div class="datesContainer">
-            <div class="firstDate date" id="firstDate"> 
-                <span>HTML</span>   
+            <div class="firstDate date" id="firstDate">
             </div>
-            <div class="secondDate date" id="secondDate"> 
-            <span>PHP</span> 
+            <div class="secondDate date" id="secondDate">
             </div>
-            <div class="thirdDate date" id="thirdDate"> 
-            PHPCSS
+            <div class="thirdDate date" id="thirdDate">
             </div>
-            <div class="fourthDate date" id="fourthDate"> JavaScript
+            <div class="fourthDate date" id="fourthDate">
             </div>
-            <div class="fifthDate date" id="fifthDate"> SQL
+            <div class="fifthDate date" id="fifthDate">
             </div>
-            <div class="sixthDate date" id="sixthDate"> React Native
+            <div class="sixthDate date" id="sixthDate">
             </div>
-            <div class="seventhDate date" id="sixthDate"> Angular
+            <div class="seventhDate date" id="sixthDate">
             </div>
         </div>
         <div class="lineChrono" id="lineChrono"></div>
-
-    </div> 
-    
-    <div>
-        <button id="btnChrono">CLIC</button>
     </div>
-</section>-->
+    <div>
+        <button id="btnChrono" type="button" class="btn btn-outline-warning">Warning</button>
+    </div>
+</section>

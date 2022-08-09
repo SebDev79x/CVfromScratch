@@ -147,10 +147,10 @@ h1 span:nth-child(1) {
   width: 100%;
 }
 .lineChrono {
-  height: 5px;
+  height: 3px;
   width: 0;
   z-index: 1;
-  transition: width 3s ease-out;
+  transition: width 3s;
   background-color: orange;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -168,60 +168,23 @@ h1 span:nth-child(1) {
   height: 100px;
 }
 .date {
-  height: 0px;
-  width: 5px;
-  bottom: 0px;
+  width: 3px;
   z-index: 2;
-  transition: height 3s ease;
+  transition: opacity 3s ease,height 3s ease;
+  opacity: 0;
+  height: 0px;
+
   background-color: orange;
   color:#0f0b2d;
-  
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
 
-  /*   transition: transform 2s ease-in-out;
- */
 }
 .transformDates {
   height: 100px;
 }
-/* .transformDates{
-  height: 1px;
-  width:5px;  
-  transform: scaleY(100);
-
-}
-.reverseDates{
-  height: 1px;
-  width:5px;  
-  transform: scaleY(0);
-
-} */
-/* .transformBackDates{
-  transform: scaleY(0);
-  transform-origin: top;
-
-} */
-/* @keyframes grow{
-  to {height:100px;width:100px}
-} */
-/* .delay{
-  animation-delay:2000ms;
-
-} */
-.firstDate {
-}
-.secondDate {
-}
-.thirdDate {
-}
-.fourthDate {
-}
-.fifthDate {
-}
-.sixthDate {
-}
-.seventhDate {
+.opacityDates {
+  opacity: 1;
 }
 /* TREE */
 /* .sectionTree1 {
