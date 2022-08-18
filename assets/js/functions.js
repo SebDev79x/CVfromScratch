@@ -7,17 +7,18 @@ export const removeClass = (element, classToRemove) => {
 }
 
 export const addClassToElements = (elementsArray, classToAdd) => {
-    elementsArray.forEach((element,i) => {
+    elementsArray.forEach((element, i) => {
         setTimeout(() => {
             element.classList.add(classToAdd);
-                }, i * 500);
+        }, i * 500);
     });
 }
 
 export const removeClassFromElements = (elementsArray, classToRemove) => {
-// Array.from(elementsArray).reverse() => to reverse a nodelist
-    Array.from(elementsArray).reverse().forEach((element,i) => {
+    // Array.from(elementsArray).reverse() => to reverse the nodelist
+    Array.from(elementsArray).reverse().forEach((element, i) => {
         setTimeout(() => {
             element.classList.remove(classToRemove);
         }, i * 10);
-    });}
+    });
+}
