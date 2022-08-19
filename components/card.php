@@ -1,4 +1,4 @@
-    <div class="card-container">
+<!--     <div class="card-container">
         <div class="card-wrapper">
             <div class="card">
                 <div class="card-front">
@@ -6,7 +6,6 @@
                     <div class="card-info">
                        <span>SUPER</span>
                     </div>
-                    <!-- Click on arrow to turn card -->
                     <i class="arrow-icon fas fa-arrow-right arrowClick"></i>
                 </div>
                 <div class="card-back">
@@ -16,7 +15,8 @@
             </div>
             
         </div>
-    </div>
+    </div> -->
+
    <!--  <div class="card-container">
         <div class="card-wrapper">
             <div class="card">

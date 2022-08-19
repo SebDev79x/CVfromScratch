@@ -29,16 +29,20 @@
         <!-- ACCORDION -->
         <?php include 'components/accordion.php'; ?>
         <!-- EVALUATIONS -->
-        <?php include 'components/technos.php'; ?>
+        <!-- <?php include 'components/technos.php'; ?> -->
         <!-- TEST -->
         <!-- <?php include 'components/test.php'; ?>-->
+           <!-- FLIPCARDS CONTAINER -->
+           <?php include 'components/flipcardscontainer.php'; ?>
         <!-- CHRONO -->
         <?php include 'components/chrono.php'; ?>
         <!-- BUTTON TO TOP -->
         <?php include 'components/buttontotop.php'; ?>
+     
         <!-- CARDS CONTAINER -->
-        <?php include 'components/cardscontainer.php'; ?>
-        <!-- FOOTER -->
+<!--         <?php include 'components/cardscontainer.php'; ?>
+ -->        
+ <!-- FOOTER -->
         <?php include 'components/footer.php'; ?>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
@@ -46,7 +50,7 @@
     <script src="assets/js/domready.js"></script>
     <script src="assets/js/scrolltotop.js"></script>
     <script src="assets/js/scrollline.js"></script>
-    <script src="assets/js/evaluations.js"></script>
+    <script src="assets/js/evaluations.js" type="module"></script>
     <script src="assets/js/hidenavbar.js"></script>
     <script src="assets/js/card.js" type="module"></script>
 

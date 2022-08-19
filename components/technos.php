@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 $languages = [
     'HTML',
     'CSS',
@@ -17,8 +17,9 @@ $values = [80, 70, 60, 40, 40, 50, 50, 90];
 <?php foreach ($languages as $key => $value) { ?>
     <div class="rowBlocksEvaluations">
     <div class="rowEachBlocksEvaluations">
-
              <div class="technoName"><?php echo $value; ?></div>
+             
+
                     <div class="progressBar">
                         <div class="divContainerProgressbar">
                             <div class="progress"></div>
@@ -30,4 +31,4 @@ $values = [80, 70, 60, 40, 40, 50, 50, 90];
 
    <?php } ?>
 </div>
-</section>
+</section> -->

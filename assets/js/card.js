@@ -1,4 +1,5 @@
 import { addClass, removeClass } from './functions.js'
+import { reverseRedLineAnimation, runRedLine } from './evaluations.js'
 
 let sectionCards = document.getElementById('sectionCards')
 let arrows = document.querySelectorAll('.arrowClick')
@@ -6,6 +7,7 @@ let arrows2 = document.querySelectorAll('.arrowClick2')
 let containers = document.querySelectorAll('.card-container')
 let cards = document.querySelectorAll('.card')
 let boolState = false
+let flipCard = document.querySelectorAll('.flip-card')
 
 // Changement de couleur HOVER
 const changeColorBackGroundOnHover = () => {
@@ -18,31 +20,39 @@ const changeColorBackGroundOnHover = () => {
         })
     })
 }
+
 // Changement de flexdirection
 const flexDirection = () => {
-    window.matchMedia("(max-width: 770px)").matches ? 
-    addClass(sectionCards, 'sectionCardsChangeFlexDirection') : 
-    removeClass(sectionCards, 'sectionCardsChangeFlexDirection')
+    window.matchMedia("(max-width: 770px)").matches ?
+        addClass(sectionCards, 'sectionCardsChangeFlexDirection') :
+        removeClass(sectionCards, 'sectionCardsChangeFlexDirection')
 
 }
-// Toggle functions between 2 states
+
+// Toggle functions between 2 states : rotation + chgt de couleur de #sectionCards
 const toggle = (i) => {
     const start = () => {
         // Ajout/changement couleur du background
         addClass(sectionCards, 'sectionCardsChangeColor')
         // Rotation d'une carte, Ternaire => Si la classe n'existe pas, add, sinon remove
-        !cards[i].classList.contains('cardsRotation') ? addClass(cards[i], 'cardsRotation') : removeClass(cards[i], 'cardsRotation')
+        !cards[i].classList.contains('cardsRotation')
+            ? addClass(cards[i], 'cardsRotation')
+            : removeClass(cards[i], 'cardsRotation')
         boolState = true
+
     }
     const end = () => {
         // Retour à couleur initiale du background
         removeClass(sectionCards, 'sectionCardsChangeColor')
         // Rotation d'une carte, Ternaire => Si la classe existe, remove, sinon add
-        cards[i].classList.contains('cardsRotation') ? removeClass(cards[i], 'cardsRotation') : addClass(cards[i], 'cardsRotation')
+        cards[i].classList.contains('cardsRotation')
+            ? removeClass(cards[i], 'cardsRotation')
+            : addClass(cards[i], 'cardsRotation')
         boolState = false
     }
     return !boolState ? start() : end()
 }
+
 // Click on arrow
 const clickOnArrow = (nodelist) => {
     let nodelistIsAnArray = Array.from(nodelist)
@@ -53,21 +63,33 @@ const clickOnArrow = (nodelist) => {
     })
 }
 
-// Capture Browser Window Resize Event
-const windowSize = () => {
+// Longueur et Largeur de l'objet window
+/* const windowSize = () => {
     console.log('HAUTEUR', window.innerHeight)
     console.log('LARGEUR', window.innerWidth)
 }
 
-window.addEventListener('resize', windowSize)
+window.addEventListener('resize', windowSize) */
 window.addEventListener('resize', flexDirection)
 
+// HOVER et > 500 : chgt de couleur + rotation SINON call de toggle via clickOnArrow
 screen.innerWidth > 500 ?
     changeColorBackGroundOnHover() :
     clickOnArrow(arrows)
 clickOnArrow(arrows2)
 
-
+// Animation .progressBar
+const animateRedLine = () => {
+    flipCard.forEach((e, i) => {
+        flipCard[i].addEventListener('mouseover', function () {
+            runRedLine(i)
+        })
+        flipCard[i].addEventListener('mouseout', function () {
+            reverseRedLineAnimation(i)
+        })
+    })
+}
+animateRedLine()
 
 
 
