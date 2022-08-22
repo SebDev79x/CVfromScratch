@@ -28,8 +28,6 @@ $values = [80, 70, 60, 40, 40, 50, 50, 90];
 <div class="flip-card">
     <div class="flip-card-inner">
         <div class="flip-card-front">
-<!--             <img src="assets/img/sun.jpg" width="50%" height="100" alt="">
- -->
             <div class="technoName"><?php echo $value; ?></div>
             <i class="arrow-icon fas fa-arrow-right arrowClick"></i>
         </div>

@@ -12,11 +12,9 @@ const scrollToTop = () => {
 };
 // FUNCTION => masque/affiche bouton en fonction de son emplacement
 const hideOrDisplayMyScrollBtn = () => {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        btnToScrollToTop.style.display = 'block';
-    } else {
-        btnToScrollToTop.style.display = 'none';
-    }
+    document.body.scrollTop > 20 || document.documentElement.scrollTop > 20
+    ? btnToScrollToTop.style.display = 'block'
+    : btnToScrollToTop.style.display = 'none';
 }
 
 // FUNCTION => changement de couleur du bouton

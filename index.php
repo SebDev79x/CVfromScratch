@@ -15,36 +15,40 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+   
+    <!-- !!! MAIN !!! -->
+    <main>
+         <!-- NAVBAR -->
+    <?php include 'components/navbar.php'; ?>
     <!-- SCROLL LINE -->
     <?php include 'components/scrollline.php'; ?>
-    <div class="wrapper">
+         <!-- GLASS -->
+         <?php include 'components/glass.php'; ?>
+       
         <!-- IDENTITY BLOCK -->
-        <?php include 'components/identity.php'; ?>
-        <!-- ACCORDION -->
-        <?php include 'components/accordion.php'; ?>
-        <!-- EVALUATIONS -->
-        <!-- <?php include 'components/technos.php'; ?> -->
-        <!-- TEST -->
-        <!-- <?php include 'components/test.php'; ?>-->
-           <!-- FLIPCARDS CONTAINER -->
-           <?php include 'components/flipcardscontainer.php'; ?>
-        <!-- CHRONO -->
-        <?php include 'components/chrono.php'; ?>
-        <!-- BUTTON TO TOP -->
-        <?php include 'components/buttontotop.php'; ?>
-     
-        <!-- CARDS CONTAINER -->
-<!--         <?php include 'components/cardscontainer.php'; ?>
- -->        
- <!-- FOOTER -->
-        <?php include 'components/footer.php'; ?>
-    </div>
+    <?php include 'components/identity.php'; ?>
+    <!-- ACCORDION -->
+    <?php include 'components/accordion.php'; ?>
+    <!-- FLIPCARDS CONTAINER -->
+    <?php include 'components/flipcardscontainer.php'; ?>
+    <!-- CHRONO -->
+    <?php include 'components/chrono.php'; ?>
+    <!-- BUTTON TO TOP -->
+    <?php include 'components/buttontotop.php'; ?>
+    <!-- FOOTER -->
+    <?php include 'components/footer.php'; ?>
+    </main>
+    
+    
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <script src="assets/js/domready.js"></script>
@@ -53,11 +57,9 @@
     <script src="assets/js/evaluations.js" type="module"></script>
     <script src="assets/js/hidenavbar.js"></script>
     <script src="assets/js/card.js" type="module"></script>
-
     <script src="assets/js/tree.js" type="module"></script>
     <script src="assets/js/chrono.js" type="module"></script>
     <script src="assets/js/functions.js" type="module"></script>
-
 </body>
 
 </html>

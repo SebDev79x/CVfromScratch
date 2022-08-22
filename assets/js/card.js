@@ -22,12 +22,12 @@ const changeColorBackGroundOnHover = () => {
 }
 
 // Changement de flexdirection
-const flexDirection = () => {
+/* const flexDirection = () => {
     window.matchMedia("(max-width: 770px)").matches ?
         addClass(sectionCards, 'sectionCardsChangeFlexDirection') :
         removeClass(sectionCards, 'sectionCardsChangeFlexDirection')
 
-}
+} */
 
 // Toggle functions between 2 states : rotation + chgt de couleur de #sectionCards
 const toggle = (i) => {
@@ -70,8 +70,8 @@ const clickOnArrow = (nodelist) => {
 }
 
 window.addEventListener('resize', windowSize) */
-window.addEventListener('resize', flexDirection)
-
+/* window.addEventListener('resize', flexDirection)
+ */
 // HOVER et > 500 : chgt de couleur + rotation SINON call de toggle via clickOnArrow
 screen.innerWidth > 500 ?
     changeColorBackGroundOnHover() :

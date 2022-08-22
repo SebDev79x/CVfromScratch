@@ -16,17 +16,14 @@ function progressBars2() {
     }
   }
   
-  // Au scroll de la page, on lance les animations ou on inverse
+  /* // Au scroll de la page, on lance les animations ou on inverse
   window.addEventListener('scroll', function () {
     if (window.scrollY > 1001) {
       progressBars2();
     }
-   /*  if (window.scrollY < 1000) {
-      inverseBars()
-   
-    } */
+  
   })
   // En cas de reload de la page, on relance les animations
   window.addEventListener('load', function () {
     progressBars2();
-  })
+  }) */

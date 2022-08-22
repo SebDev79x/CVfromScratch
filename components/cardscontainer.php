@@ -1,5 +1,4 @@
-<section class="sectionCards" id="sectionCards">
-    <?php include 'card.php'; ?>
+<!-- <section class="sectionCards" id="sectionCards">
     <?php include 'card.php'; ?>
    
-</section>
+</section> -->

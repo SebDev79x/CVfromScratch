@@ -18,19 +18,20 @@
             </h2>
             <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#myAccordion">
                 <div class="card-body">
-                    <p>43 ans, célibataire sans enfant, je suis à la recherche d'opportunités professionnelles.</p>
-                    <p>43 ans, célibataire sans enfant, je suis à la recherche d'opportunités professionnelles.</p>
-
+                    <p>43 ans, célibataire sans enfant, je suis à la recherche d'opportunités professionnelles, idéalement en CDI.</p>
+                    <p>Chargé de clientèle pendant 5 ans à Paris jusqu'en 2012, je demeure ouvert à l'idée d'y travailler de nouveau si salaire attrayant et possibilité de télétravail.</p>
                 </div>
             </div>
         </div>
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingThree">
-                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">3. What is CSS?</button>                     
+                <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">À propos du développement...</button>                     
             </h2>
             <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
                 <div class="card-body">
-                    <p>CSS stands for Cascading Style Sheet. CSS allows you to specify various style properties for a given HTML element such as colors, backgrounds, fonts etc. <a href="https://www.tutorialrepublic.com/css-tutorial/" target="_blank">Learn more.</a></p>
+                    <p>Conscient des bonnes pratiques, je suis les principes de développement tels que DRY, KISS etc.</p>
+                    <p>J'essaie ainsi de ne pas répéter mon code, à refactorer une fois parvenu au résultat escompté. </p>
+                    <p>Pour résumer, je m'efforce de produire du code lisible, propre et maintenable. </p>
                 </div>
             </div>
         </div>

@@ -1,8 +1,8 @@
 
-<nav class="navbar apparition navbar-expand-lg" id="navbar">
+<nav class="navbar navbar-expand-lg" id="navbar">
     <div class="container">
       <!-- LOGO -->
-      <?php include './elements/logo.php'; ?>
+      <!-- <?php include './elements/logo.php'; ?> -->
       <!-- Hamburger -->
       <button class="navbar-toggler" type="button" aria-label="responsive hamburger menu" data-bs-target="#navbarResponsive" data-bs-toggle="collapse" aria-expanded="true">
         <span class="line"></span>
