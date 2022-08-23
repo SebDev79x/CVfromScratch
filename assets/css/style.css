@@ -12,18 +12,18 @@ main {
   background: linear-gradient(to right top, #65dfc9, #6cdbeb);
 }
 /* GLASS */
-.sectionGlass {
+/* .sectionGlass {
   margin-top: 100px;
-/*   display: grid;
-  grid-template-columns: minmax(150px, 25%) auto; */
+   display: grid;
+  grid-template-columns: minmax(150px, 25%) auto; 
   border: 2px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 80vh;
   gap: 100px;
-}
-.glass {
+} */
+/* .glass {
   min-height: 80vh;
   min-width: 80%;
   background: #fff;
@@ -35,10 +35,14 @@ main {
   border-radius: 20px;
   backdrop-filter: blur(2rem);
   display: flex;
-
-  /*   z-index:3;
- */
+} */
+/* CONTACT */
+.sectionContact{
+  display: flex;
+  flex-direction: row;
+  background: black;
 }
+
 .links{
   display: flex;
   justify-content: space-between;
@@ -50,26 +54,88 @@ main {
 .proLink h5 {
   padding:10px;
 }
-.coords{
+.coords h1,.coords i, .coords p{
+color: white;
+}
+.coords p i {
+  color:#ff004f;
+  margin-right:15px;
+  font-size: 25px;
+
+}
+.coords .contact h1 {
+  text-align: center;
+
+}
+.socialIcons{
+  margin-top: 30px;
+}
+.socialIcons a i{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right:15px;
+  color:#ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.socialIcons a i:hover{
+  color:#ff004f;
+  transform: translateY(-5px);
+}
+ .coords{
   flex:1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  );
-  border-radius: 20px;
-
+ }
+ .divForm{
+  flex:1;
+ }
+ .btn.btn2{
+display: inline-block;
+background-color:#ff004f;
+color: black;
+ }
+ .btn.btn3{
+  display: inline-block;
+  background-color:#ff004f;
+  color: black;
+   }
+   /* pour petits écrans */
+ @media screen and (max-width: 600px) {
+  .sectionContact{
+    flex-direction: column;
+  }
+  .buttonContainer{
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+     }
 }
-.divForm{
+/* .info{
+   display: flex;
+  flex-direction: row;
+  justify-content: center; 
+  margin:10px;
+} */
+/* .divForm{
   flex:2;
   display: flex;
   flex-direction: column;
   justify-content: center;
+} */
+form input, form textarea{
+  width:100%;
+  border:0;
+  outline: none;
+  background: #262626;
+  padding: 15px;
+  margin: 15px 0;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 15px;
 }
 /* .divGlass2 {
   background: #fff;
@@ -268,7 +334,7 @@ align-items: center;
   font-size: 25px;
   line-height: 35px;
 }
-.arrow-icon {
+.arrowClick,.arrowClick2 {
   position: absolute;
   right: 30px;
   bottom: 5px;
@@ -318,8 +384,7 @@ align-items: center;
   flex-direction: column;
   justify-content: space-between;
 }
-h1 {
-  color: red;
+/* h1 {
   margin: 20px 0;
   padding-bottom: 20px;
   border-bottom: 1px dashed grey;
@@ -330,7 +395,7 @@ h1 span {
 h1 span:nth-child(1) {
   font-weight: normal;
   color: rgb(220, 148, 148);
-}
+} */
 /* CHRONO */
 
 .sectionChrono {
@@ -647,6 +712,7 @@ h1 span:nth-child(1) {
   font-size: 20px;
 }
 nav {
+  border:2px solid red;
   background-color: transparent;
   font-size: larger;
   transition: 2s ease-in-out;
