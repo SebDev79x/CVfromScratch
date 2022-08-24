@@ -1,4 +1,3 @@
-
 import { addClass } from './functions.js'
 import { removeClass } from './functions.js'
 import { addClassToElements } from './functions.js'

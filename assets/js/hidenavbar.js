@@ -1,4 +1,4 @@
-let nav = document.getElementById('navbar')
+/* let nav = document.getElementById('navbar')
 
 const hideNav = () => {
     //   transition: 3s ease dans .navbar
@@ -7,4 +7,4 @@ const hideNav = () => {
         : nav.style.top = '0'
 }
 
-window.onscroll = () => hideNav()
+window.onscroll = () => hideNav() */
