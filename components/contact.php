@@ -54,15 +54,6 @@
  <p>INCLURE CV DANS ASSETS + gérer HOVER en javascript</p>
  <a href="" download class="btn btn2">Télécharger mon CV ?</a>
         </div>
-<div class="divForm">
-        <form action="">
-            <input type="text" placeholder="Your name">
-            <input type="email" placeholder="Your email">
-            <input type="text" placeholder="Your phone number">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
-            <div class="buttonContainer"><button type="submit" class="btn btn3">Envoyer</button></div>
-            
-        </form>
+       <?php include 'form.php' ?>
         
-    </div>
 </section>
