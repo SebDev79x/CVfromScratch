@@ -1,4 +1,4 @@
-<section class="sectionAccordion">
+<section class="sectionAccordion" id="about">
     <div class="accordion">
         <div class="accordion-element active">
             <h1 class="accordion-header">Mon parcours</h1>

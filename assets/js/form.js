@@ -4,10 +4,14 @@ const spansAsArray = Array.from(spanForm)
 const checkString = (string) => {
     return string == "Champ correct"
 }
-   // Toggle classes to hide messages if form is ok after submit
-   const hideSpansIfFormOk = (array) => {
-   return array.map((e,i)=>{
-    e.classList.toggle('fade')
+const submitForm = async () => {
+    const go = await formX.submit()
+    return go
+}
+// Toggle classes to hide messages if form is ok after submit
+const hideSpansIfFormOk = (array) => {
+    return array.map((e, i) => {
+        e.classList.toggle('fade')
     })
 }
 // Get form
@@ -28,9 +32,7 @@ const fetchDataFromForm = async (formatedFormData) => {
                 data = JSON.parse(data)
                 // https://softauthor.com/javascript-htmlcollection-vs-nodelist/
                 const message = Object.values(data.message)
-
                 spansAsArray.forEach(function (el, i) {
-                 
                     // Change message color
                     const toggleColor = () => {
                         spansAsArray[i].style.color = message[i] == "Champ correct" ? "green" : "red"
@@ -71,42 +73,38 @@ const fetchDataFromForm = async (formatedFormData) => {
                     let stateX = false
                     const fireSwalFormOk = () => {
                         console.log("response swal");
-
                         Swal.fire({
                             title: 'Alors !??',
                             text: 'Confirmer la soumission ?',
                             icon: 'warning',
                             confirmButtonText: 'Entendu',
                             showCancelButton: true,
-                            heightAuto:true
+                            heightAuto: true
                         }).then((action) => {
-                            
+
                             if (action.isConfirmed) {
                                 stateX = true
                             }
-                           
                         })
-                       
                     }
-                   const fireSwalFormOk2 = (()=>{
+                    const fireSwalFormOk2 = (() => {
                         console.log("response swal222222");
-                           console.log("message",message);
-                           
-                            setTimeout(() => {
-                                if(stateX == true){
+                        console.log("message", message);
+                        setTimeout(() => {
+                            if (stateX == true) {
                                 Swal.fire({
                                     title: 'Super !',
                                     text: 'Message envoyé ! Merci !',
                                     icon: 'success'
-                                }).then((action)=>{
+                                }).then((action) => {
                                     hideSpansIfFormOk(spansAsArray)
-                                    
                                     stateX = false
+                                    if (action.isConfirmed) {
+                                        submitForm()
+                                    }
                                 })
                             }
-                            }, 3000)
-                           
-                            
+                        }, 3000)
                     })
                     // Check if every element in message == "Champ correct" => form is reset or not
                     message.every(checkString) ? [fireSwalFormOk()] : false

@@ -34,6 +34,8 @@
     <?php include 'components/identity.php'; ?>
     <!-- ACCORDION -->
     <?php include 'components/accordion.php'; ?>
+     <!-- EXPERIENCE -->
+     <?php include 'components/experience.php'; ?>
     <!-- CONTACT -->
     <?php include 'components/contact.php'; ?>
     <!-- FLIPCARDS CONTAINER -->
@@ -52,6 +54,8 @@
  -->
     <script src="assets/js/scrolltotop.js"></script>
     <script src="assets/js/scrollline.js"></script>
+        <script src="assets/js/anchors.js"></script>
+
     <script src="assets/js/evaluations.js" type="module"></script>
     <script src="assets/js/hidenavbar.js"></script>
     <script src="assets/js/accordion.js"></script>

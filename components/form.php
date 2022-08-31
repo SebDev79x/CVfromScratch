@@ -1,5 +1,5 @@
 <section class="sectionForm">
-    <form method="POST" id="form">
+    <form method="POST" action="#" id="form">
 
         <input type="text" name="username" id="username" placeholder="Votre nom">
         <span class="spanForm username"></span>

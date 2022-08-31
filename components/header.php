@@ -1,13 +1,15 @@
 <div id="menu-bars" class="fas fa-bars">
 </div>
 <header>
-    <a href="#" class="logo"><span>Sébastien Mazur</span></a>
-    <?php include './elements/logo2.php'; ?>
+        <a class="logo"><span>Sébastien Mazur</span></a>
+
 
     <nav class="navbar">
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#experience">experience</a>
-        <a href="#formation">formation</a>
+        <a id="homeLink" class="scrollTo"><i class="fas fa-home"></i></a>
+        <a id="aboutLink" class="scrollTo"><i class="fas fa-address-book"></i></a>
+        <a id="xpLink" class="scrollTo"><i class="fas fa-info-circle"></i></a>
+        <a id="contactLink" class="scrollTo"><i class="fas fa-envelope"></i></a>
+        <a id="languagesLink" class="scrollTo"><i class="fas fa-code"></i></a>
+        <a id="footerLink" class="scrollTo"><i class="fas fa-arrow-down"></i></a>
     </nav>
 </header>

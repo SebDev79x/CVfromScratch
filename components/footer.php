@@ -1,4 +1,4 @@
-<footer>
+<footer id="footer">
 
         <div>© 2021 Copyright - Tous droits réservés</div>
         <div>

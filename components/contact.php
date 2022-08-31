@@ -1,4 +1,4 @@
-<section class="sectionContact">
+<section class="sectionContact" id="contact">
 <div class="coords">
     <div class="contact">
     <h1>Contact</h1>

@@ -1,5 +1,5 @@
 
-<section class="sectionIdentity">
+<section class="sectionIdentity" id="home">
 <!-- <div class="contentImg">
         <img src="assets/img/ab.jpg" alt="">
       </div> -->
@@ -11,6 +11,7 @@
 
 <!--       <h1 class="myJob">Développeur Web & Web Mobile</h1>
  -->      </div>
+ <div class="contentJob2"></div>
    
    
  
