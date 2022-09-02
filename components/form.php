@@ -1,4 +1,3 @@
-<section class="sectionForm">
     <form method="POST" action="#" id="form">
 
         <input type="text" name="username" id="username" placeholder="Votre nom">
@@ -21,4 +20,3 @@
         </div>
         
     </form>
-</section>

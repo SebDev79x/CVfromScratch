@@ -1,59 +1,37 @@
 <section class="sectionContact" id="contact">
-<div class="coords">
-    <div class="contact">
-    <h1>Contact</h1>
-    <p><i class="fas fa-paper-plane"></i>sebastien.mazur@wanadoo.fr</p>
-    <p><i class="fas fa-phone-square-alt"></i>06 15 92 38 65</p>
-    </div>
-
-<div class="socialIcons">
-    <a href="https://www.linkedin.com/in/s%C3%A9bastien-mazur-a1ab794a/"><i class="fab fa-linkedin"></i></a>
-    <a href="https://github.com/SebDev79x"><i class="fab fa-github"></i></a>
-
-</div>
-            <!-- <div class="info">
-            <span><img src="assets/img/birthday-cake.png" alt=""></span><p>10 / 04 /1979</p>
- 
+    <div class="wrapperCoords">
+        <div class="coords">
+        <div class="contactTitle">
+                <h3>CONTACT</h3>
             </div>
-            <div class="info">
-
-                <span><img src="assets/img/cargradient.png" alt=""></span>
-                <p>Permis B + véhicule</p>
+            <div class="socialIcons">
+                <p><i class="fas fa-paper-plane"></i>sebastien.mazur@wanadoo.fr</p>
+                <p><i class="fas fa-phone-square-alt"></i>06 15 92 38 65</p>
             </div>
-            <div class="info">
-                <span><img src="assets/img/address.png" alt=""></span>
-                <ul>
-                    <li>15 rue de la Croix</li>
-                    <li>60640 Quesmy</li>
-                </ul>
+            <div class="socialIcons">
+                <p><i class="fa fa-calendar"></i>10 / 04 /1979</p>
+                <p><i class="fa fa-car"></i>Permis B + véhicule</p>
+                <p><i class="fa fa-forward"></i>Permis B + véhicule</p>
 
             </div>
-            <div class="info">
-                <span><img src="assets/img/smartphone.png" alt=""></span>
-                <p>06 15 92 38 65</p>
+            <div class="address">
+                <div class="googleMaps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5168.36429746446!2d3.0583776!3d49.6320215!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e872c0effeeb15%3A0x6e5a1b29ed30eca5!2sMairie!5e0!3m2!1sfr!2sfr!4v1662021485606!5m2!1sfr!2sfr"
+                        width="250" height="175" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-
-                <div class="info">
-                <span><img src="assets/img/email.png" alt=""></span>
-                <p>sebastien.mazur@wanadoo.fr</p>
-            </div>
-            <div class="info links">
-                <div class="proLink">
-                    <a href="https://www.linkedin.com/in/s%C3%A9bastien-mazur-a1ab794a/" target="_blank"><img
-                            src="assets/img/linkedin32lightblue.png" /></a>
-                    <h5>Linkedin</h5>
-                </div>
-                <div class="proLink">
-                    <a href="https://github.com/SebDev79x" target="_blank"><img src="assets/img/github32.png" /></a>
-                    <h5>GitHub</h5>
+                <div class="myCoords">
+                    <address>
+                        Sébastien Mazur<br>
+                        15 rue de la Croix<br>
+                        60640 Quesmy
+                    </address>
                 </div>
             </div>
-
-
- -->
- <p>INCLURE CV DANS ASSETS + gérer HOVER en javascript</p>
- <a href="" download class="btn btn2">Télécharger mon CV ?</a>
         </div>
-       <?php include 'form.php' ?>
-        
+        <div class="divForm">
+            <?php include 'form.php'; ?>
+        </div>
+    </div>
 </section>

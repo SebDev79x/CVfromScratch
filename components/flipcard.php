@@ -32,7 +32,7 @@ $values = [80, 70, 60, 40, 40, 50, 50, 90];
             <i class="arrow-icon fas fa-arrow-right arrowClick"></i>
         </div>
         <div class="flip-card-back">
-            <div>
+            <div class="innerBack">
             <p><?php echo $value; ?></p>
             <p class="value"><?php echo $values[$key]; ?>%</p>
             

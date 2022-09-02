@@ -65,9 +65,12 @@
     <script src="assets/js/chrono.js" type="module"></script>
     <script src="assets/js/functions.js" type="module"></script>
     <script src="assets/js/header.js" type="module"></script>
+    <script src="assets/js/typewriter.js" type="module"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <script src="./node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
 </body>
 

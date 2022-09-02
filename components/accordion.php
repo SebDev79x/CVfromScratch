@@ -29,10 +29,12 @@
             </div>
         </div>
     </div>
-    <!--     <div class="contentAccordionImg">
+    <div class="accordeonIllustration">
+
     <img src="assets/img/ab.jpg" alt="">
 
-    </div> -->
+    </div>
+
 </section>
 <!-- <div class="m-4">
     <div class="accordion" id="myAccordion">
