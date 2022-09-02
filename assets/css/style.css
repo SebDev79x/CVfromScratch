@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=MuseoModerno&family=Open+Sans:wght@400;800&family=Sunshiney&display=swap');
 :root {
-  --main-color: rgb(255, 0, 0);
+  --main-color: #f5f0e1;
   font-size: 16px;
 }
 * {
@@ -87,7 +87,7 @@ header .lastname {
   right: 1rem;
   z-index: 10000;
   background: var(--main-color);
-  color: #fff;
+  color: #1e3d59;
   border-radius: 0.5rem;
   padding: 1rem 1.5rem;
   font-size: 1.5rem;
@@ -347,8 +347,28 @@ form textarea {
   color:#f5f0e1;
   background: #1e3d59;
 }
-.innerBack{
-  background: #f5f0e1;
+
+.supHalfFront, .infHalfBack{
+width:100%;
+background: #ff6e40;
+
+}
+.infHalfFront,.supHalfBack{
+  width:100%;
+  background: #1e3d59;
+
+}
+.supHalfFront,.supHalfBack{
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  height:80%;
+
+}
+.infHalfFront, .infHalfBack{
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height:20%;
+
 }
 .flip-card-back {
   display: flex;
@@ -360,6 +380,13 @@ form textarea {
   backdrop-filter: blur(2rem);
   color: #1e3d59;
   transform: rotateY(180deg);
+}
+.arrowClick,
+.arrowClick2 {
+  position: absolute;
+  right: 30px;
+  bottom: 12px;
+  cursor: pointer;
 }
 /* CANVAS EYEBALLS */
 /* .canvasContainer{
@@ -422,13 +449,7 @@ form textarea {
 
   line-height: 35px;
 }
-.arrowClick,
-.arrowClick2 {
-  position: absolute;
-  right: 30px;
-  bottom: 5px;
-  cursor: pointer;
-}
+
 
 .card-back {
   background: #0f0b2d;
@@ -778,13 +799,12 @@ h1 span:nth-child(1) {
   justify-content: center;
 }
 .divContainerProgressbar {
-  background-color: #f36f51;
-
   width: 150px;
 }
 .value,
 .technoName {
-  color: #f36f51;
+  color: #f5f0e1;
+  font-weight: bolder;
 }
 .progress {
   height: 5px !important;

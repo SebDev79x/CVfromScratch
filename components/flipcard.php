@@ -28,15 +28,22 @@ $values = [80, 70, 60, 40, 40, 50, 50, 90];
 <div class="flip-card">
     <div class="flip-card-inner">
         <div class="flip-card-front">
+            <div class="supHalfFront">
             <div class="technoName"><?php echo $value; ?></div>
+
+            </div>
+            <div class="infHalfFront">
             <i class="arrow-icon fas fa-arrow-right arrowClick"></i>
+
+            </div>
+
         </div>
         <div class="flip-card-back">
-            <div class="innerBack">
-            <p><?php echo $value; ?></p>
+        <div class="supHalfBack">
+        <div class="technoName"><?php echo $value; ?></div>
             <p class="value"><?php echo $values[$key]; ?>%</p>
-            
             </div>
+            <div class="infHalfBack">
             <div class="progressBar">
                 <div class="divContainerProgressbar">
                     <div class="progress"></div>
@@ -45,6 +52,8 @@ $values = [80, 70, 60, 40, 40, 50, 50, 90];
           
             
             <i class="arrow-icon fas fa-arrow-right arrowClick2"></i>
+            </div>
+
         </div>
     </div>
 </div>
