@@ -15,7 +15,7 @@ html {
 }
 body {
   background: #f5f0e1;
-  padding-left: 15rem;
+  padding-left: 13rem;
 }
 header {
   position: fixed;
@@ -23,25 +23,29 @@ header {
   left: 0;
   bottom: 0;
   background: #1e3d59;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   z-index: 1000;
-  flex-flow: column;
-  width: 15rem;
-  text-align: center;
-  transition: all 0.8s ease-in-out;
-}
-.navbar {
   display: flex;
   flex-direction: column;
+  width: 13rem;
+  text-align: center;
+  transition: all 0.8s ease-in-out;
+  align-items: center;
+  justify-content: center;
 }
-
-header span {
+.navbar {
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navbar a i {
+  cursor: pointer;
+}
+/* header span {
   color: #f5f0e1;
   font-weight: bolder;
   transition: letter-spacing 0.2s linear;
-}
+} */
 header nav a {
   display: inline-block;
   position: relative;
@@ -110,6 +114,9 @@ header .lastname {
   header.active {
     left: 0%;
   }
+  header nav a {
+    margin: 1rem 0;
+  }
 }
 @media (max-width: 450px) {
   html {
@@ -118,6 +125,47 @@ header .lastname {
   header {
     width: 100%;
   }
+  header nav a {
+    margin: 1rem 0;
+  }
+}
+/* INFO */
+
+/* #info .main img{
+  filter: blur(1.5rem)
+} */
+.sectionInfo {
+  display: grid;
+  /* grid-template-columns: 33% 33% 33%;
+  background-color: chartreuse;
+  border:2px solid blue;
+  grid-template-rows: 400px 400px;
+  gap: 1rem; */
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: 300px 300px;
+  grid-template-areas:
+    'item1 item1 item2 item3'
+    'item4 item5 item5 item3';
+}
+.item1 {
+  grid-area: item1;
+}
+.item2 {
+  grid-area: item2;
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+}
+.articleInfo {
+  background: #0f0b2d;
+  border: 2px solid yellow;
+  color: yellow;
 }
 
 /* CUSTOM HEADER */
@@ -127,17 +175,17 @@ header .lastname {
   grid-template-columns: 65% 35%;
 }
 .accordeonIllustration {
-  border: 5px solid aquamarine;
- /*  background-image: url('../img/ab.jpg');
+  /*  background-image: url('../img/ab.jpg');
   background-size: cover;
   background-repeat: no-repeat; */
 }
 .accordeonIllustration img {
-  width:100%;
-  height:100%;
+  width: 100%;
+  height: 100%;
 }
 .accordion {
-  border: 5px solid blue;
+  /*   border: 5px solid blue;
+ */
 }
 .accordion-header {
   font-size: 2rem;
@@ -198,7 +246,8 @@ header .lastname {
   text-align: center;
 }
 .socialIcons {
-  border: 2px solid yellowgreen;
+  /*   border: 2px solid yellowgreen;
+ */
 }
 .socialIcons a i {
   text-decoration: none;
@@ -216,31 +265,36 @@ header .lastname {
 .wrapperCoords {
   display: flex;
   flex-direction: row;
-  border: 5px solid cyan;
+  /*   border: 5px solid cyan;
+ */
   flex: 1;
 }
 /* wrapperCoords includes .coords & divForm*/
 .coords {
-  border: 2px solid blue;
+  /*   border: 2px solid blue;
+ */
   display: flex;
   flex-direction: column;
   flex: 1;
   justify-content: space-around;
 }
 .address {
-  border: 2px solid pink;
+  /*   border: 2px solid pink;
+ */
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 .divForm {
-  border: 2px solid blue;
+  /*   border: 2px solid blue;
+ */
   display: flex;
   justify-content: center;
   flex: 1.5;
 }
 #form {
-  border: 2px solid yellow;
+  /*   border: 2px solid yellow;
+ */
 }
 .btn.btn2 {
   display: inline-block;
@@ -269,7 +323,8 @@ header .lastname {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 2px solid violet;
+  /*   border: 2px solid violet;
+ */
 }
 /* .divForm{
   flex:2;
@@ -301,13 +356,16 @@ form textarea {
 @media screen and (max-width: 1366px) {
   .sectionFlipCards {
     grid-template-columns: 1fr 1fr 1fr;
-
   }
 }
 @media screen and (max-width: 768px) {
   .sectionFlipCards {
     grid-template-columns: 1fr 1fr;
-
+  }
+}
+@media screen and (max-width: 450px) {
+  .sectionFlipCards {
+    grid-template-columns: 1fr;
   }
 }
 .flip-card {
@@ -344,31 +402,31 @@ form textarea {
   justify-content: space-between;
   align-items: center;
   border-radius: 20px;
-  color:#f5f0e1;
+  color: #f5f0e1;
   background: #1e3d59;
 }
 
-.supHalfFront, .infHalfBack{
-width:100%;
-background: #ff6e40;
-
+.supHalfFront,
+.infHalfBack {
+  width: 100%;
+  background: #ff6e40;
 }
-.infHalfFront,.supHalfBack{
-  width:100%;
+.infHalfFront,
+.supHalfBack {
+  width: 100%;
   background: #1e3d59;
-
 }
-.supHalfFront,.supHalfBack{
+.supHalfFront,
+.supHalfBack {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  height:80%;
-
+  height: 80%;
 }
-.infHalfFront, .infHalfBack{
+.infHalfFront,
+.infHalfBack {
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  height:20%;
-
+  height: 20%;
 }
 .flip-card-back {
   display: flex;
@@ -644,23 +702,36 @@ h1 span:nth-child(1) {
   justify-content: center;
   align-items: center;
   padding: 50px;
-  border: 2px solid red;
+  /*   border: 2px solid red;
+ */
   transition: all 0.2s linear;
 }
 .contentJob2 {
   flex: 1;
-  border: 2px solid yellow;
-  /*   background-image: url('../img/logo11.png');
+  /*   border: 2px solid yellow;
+ */ /*   background-image: url('../img/logo11.png');
   background-size:auto;
   background-position: center;
   background-repeat: no-repeat;  */
 }
 .logo {
-  background-image: url('../img/logo11.png');
-  width: 100%;
-  height: 100%;
-  background-position: center;
+  /*   background-image: url('../img/logo11.png');
+ */
+  width: 12rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10001;
+
+  /*   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  */
+  /*  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none; */
 }
 .contentJob:hover {
   letter-spacing: 0.2rem;
@@ -736,26 +807,24 @@ h1 span:nth-child(1) {
 }
 #buttonToScrollToTop {
   z-index: 2;
-  position: fixed;
-  bottom: 100px;
-  right: 13px;
+  border: none;
   outline: none;
+  position: fixed;
+  bottom: 60px;
+  right: 13px;
   cursor: pointer;
   padding: 15px;
-  border-radius: 150px;
-  /*   font-size: 18px;
- */
+  border-radius: 10px;
   font-weight: bold;
-  background-color: #f36f51;
+  background-color: #ff6e40;
+  color: #f5f0e1;
 }
 @media screen and (max-width: 600px) {
   #buttonToScrollToTop {
-    /*     font-size: 15px;
- */
     width: 20px;
     height: 20px;
     text-align: center;
-    font-weight: normal;
+    font-weight: bolder;
     padding: 20px;
   }
   .top {
@@ -960,8 +1029,4 @@ a.nav-link {
 .sectionExperience {
   font-weight: bold;
   height: 500px;
-  border: 5px solid blue;
-}
-.navbar a i {
-  cursor: pointer;
 }

@@ -31,7 +31,8 @@
     </div>
     <div class="accordeonIllustration">
 
-    <img src="assets/img/ab.jpg" alt="">
+<!--     <img src="assets/img/ab.jpg" alt="">
+ --><p class="mq-value"></p>
 
     </div>
 

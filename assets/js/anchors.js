@@ -6,8 +6,7 @@ let anchor2 = document.querySelector('#about');
 let anchor3 = document.querySelector('#xp');
 let anchor4 = document.querySelector('#contact');
 let anchor5 = document.querySelector('#languages');
-let anchor6 = document.querySelector('#footer');
-let allAnchors = [anchor1, anchor2, anchor3, anchor4, anchor5, anchor6]
+let allAnchors = [anchor1, anchor2, anchor3, anchor4, anchor5]
 
 // Fonction anchors : liens d'ancrage redirigeant vers une zone spécifique de la page
 const anchors = () => {

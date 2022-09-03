@@ -24,6 +24,8 @@
 </head>
 
 <body>
+     <!-- LOGO -->
+     <?php include 'components/logo.php'; ?>
     <!-- HEADER -->
     <?php include 'components/header.php'; ?>
     <!-- NAVBAR -->
@@ -33,9 +35,9 @@
     <!-- IDENTITY BLOCK -->
     <?php include 'components/identity.php'; ?>
     <!-- ACCORDION -->
-    <?php include 'components/accordion.php'; ?>
+    
      <!-- EXPERIENCE -->
-     <?php include 'components/experience.php'; ?>
+     <?php include 'components/info.php'; ?>
     <!-- CONTACT -->
     <?php include 'components/contact.php'; ?>
     <!-- FLIPCARDS CONTAINER -->

@@ -19,12 +19,12 @@ const hideOrDisplayMyScrollBtn = () => {
 
 // FUNCTION => changement de couleur du bouton
 const changeColorMyScrollBtn = () => {
-    btnToScrollToTop.style.backgroundColor = 'red';
-    btnToScrollToTop.style.color = 'yellow';
+    btnToScrollToTop.style.backgroundColor = '#f5f0e1';
+    btnToScrollToTop.style.color = '#ff6e40';
 
     setTimeout(()=>{
-        btnToScrollToTop.style.backgroundColor = 'orange';
-    btnToScrollToTop.style.color = '#0f0b2d';
+        btnToScrollToTop.style.backgroundColor = '#ff6e40';
+    btnToScrollToTop.style.color = '#f5f0e1';
     },2000)
 }
 // Appel des fonctions lorsque se produisent des événements
