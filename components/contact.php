@@ -1,6 +1,5 @@
 <section class="sectionContact" id="contact">
-    <div class="wrapperCoords">
-        <div class="coords">
+<div class="coords">
         <div class="contactTitle">
                 <h3>CONTACT</h3>
             </div>
@@ -30,8 +29,8 @@
                 </div>
             </div>
         </div>
-        <div class="divForm">
+    <div class="wrapperForm">
+   
             <?php include 'form.php'; ?>
-        </div>
     </div>
 </section>

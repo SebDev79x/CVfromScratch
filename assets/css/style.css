@@ -136,19 +136,33 @@ header .lastname {
 } */
 .sectionInfo {
   display: grid;
-  /* grid-template-columns: 33% 33% 33%;
-  background-color: chartreuse;
-  border:2px solid blue;
-  grid-template-rows: 400px 400px;
-  gap: 1rem; */
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 300px 300px;
+  row-gap: 2rem;
+  column-gap: 2rem;
   grid-template-areas:
     'item1 item1 item2 item3'
     'item4 item5 item5 item3';
+  padding: 20px;
+}
+.sectionInfo > article {
+  border-radius: 15px;
+
+}
+@media screen and (max-width: 991px) {
+  .sectionInfo {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-areas:
+      'item1 item1'
+      'item4 item2'
+      'item3 item3'
+      'item5 item5';
+  }
 }
 .item1 {
   grid-area: item1;
+
 }
 .item2 {
   grid-area: item2;
@@ -163,10 +177,39 @@ header .lastname {
   grid-area: item5;
 }
 .articleInfo {
-  background: #0f0b2d;
-  border: 2px solid yellow;
-  color: yellow;
+  background: #1e3d59;
 }
+.itemTitle{
+  background: #ff6e40;
+  height:20%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding:15px;
+  font-size: 2rem;
+  font-weight: bold;
+  color:#1e3d59;
+  text-align: start;
+  display: flex;
+  align-items: center;
+text-justify:inter-word ;
+} 
+.itemContent{
+  background: #1e3d59;
+  height:80%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding:15px;
+  color:#f5f0e1;
+text-align: justify;
+overflow: hidden;
+}
+/* .item1Sup {
+
+transition: height 1s ease-in-out;
+}
+.item1Inf {
+  transition: height 1s ease-in-out;
+} */
 
 /* CUSTOM HEADER */
 /* CUSTOM ACCORDION */
@@ -240,15 +283,35 @@ header .lastname {
 } */
 /* CONTACT */
 .sectionContact {
-  display: flex;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 600px;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    grid-template-areas:
+      'item1 item1 item2 item2'
+      ;
+    padding: 20px;
+border-radius: 15px;
+}
+
+.wrapperForm {
+  grid-area: item2;
+  background:#1e3d59 ;
+  border-radius: 15px;
+
+}
+.coords {
+  grid-area: item1;
+  background:#1e3d59 ;
+  border-radius: 15px;
+
 }
 .contactTitle {
   text-align: center;
 }
-.socialIcons {
-  /*   border: 2px solid yellowgreen;
- */
-}
+
 .socialIcons a i {
   text-decoration: none;
   font-size: 30px;
@@ -261,41 +324,35 @@ header .lastname {
   color: #ff6e40;
   transform: translateY(-5px);
 }
+.wrapperForm{
+border:2px solid blue;
+}
+.coords{
+  border:2px solid red;
 
-.wrapperCoords {
+}
+/* .wrapperCoords {
   display: flex;
   flex-direction: row;
-  /*   border: 5px solid cyan;
- */
+  background: #1e3d59;
   flex: 1;
-}
+  border-radius: 15px;
+} */
 /* wrapperCoords includes .coords & divForm*/
-.coords {
-  /*   border: 2px solid blue;
- */
+/* .coords {
+ color:#f5f0e1;
   display: flex;
   flex-direction: column;
   flex: 1;
   justify-content: space-around;
 }
 .address {
-  /*   border: 2px solid pink;
- */
+
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-.divForm {
-  /*   border: 2px solid blue;
- */
-  display: flex;
-  justify-content: center;
-  flex: 1.5;
-}
-#form {
-  /*   border: 2px solid yellow;
- */
-}
+} */
+
 .btn.btn2 {
   display: inline-block;
   color: black;
@@ -306,33 +363,25 @@ header .lastname {
 }
 
 /* pour petits écrans */
-@media screen and (max-width: 991px) {
+/* @media screen and (max-width: 991px) {
   .wrapperCoords {
     display: flex;
     flex-direction: column;
   }
-  /* .buttonContainer {
+  .buttonContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  } */
-}
+  }
+} */
 
 .info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /*   border: 2px solid violet;
- */
 }
-/* .divForm{
-  flex:2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-form input,
+/* form input,
 form textarea {
   width: 100%;
   border: 0;
@@ -341,10 +390,8 @@ form textarea {
   padding: 15px;
   margin: 15px 0;
   color: #fff;
-  /*   font-size: 18px;
- */
   border-radius: 15px;
-}
+} */
 /* FLIPCARDS */
 .sectionFlipCards {
   border-radius: 20px;
