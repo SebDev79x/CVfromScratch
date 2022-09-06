@@ -1,5 +1,5 @@
 import { addClass, removeClass } from './functions.js'
-import { reverseRedLineAnimation, runRedLine } from './evaluations.js'
+
 
 let sectionCards = document.getElementById('sectionCards')
 let arrows = document.querySelectorAll('.arrowClick')
@@ -79,7 +79,7 @@ screen.innerWidth > 500 ?
 clickOnArrow(arrows2)
 
 // Animation .progressBar
-const animateRedLine = () => {
+/* const animateRedLine = () => {
     flipCard.forEach((e, i) => {
         flipCard[i].addEventListener('mouseover', function () {
             runRedLine(i)
@@ -89,10 +89,11 @@ const animateRedLine = () => {
         })
     })
 }
-animateRedLine()
+animateRedLine() */
 
-
-
+/*     const value = document.querySelectorAll('.value')
+ */
+ 
 
 
 

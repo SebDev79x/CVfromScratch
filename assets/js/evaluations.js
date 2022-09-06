@@ -1,4 +1,5 @@
-let progress = document.querySelectorAll('.progress')
+
+/* let progress = document.querySelectorAll('.progress')
 let value = document.querySelectorAll('.value')
 
 export const runRedLine = (i) => {
@@ -12,7 +13,10 @@ export const runRedLine = (i) => {
 export const reverseRedLineAnimation = (i) => {
 
   progress[i].style.width = 0
-}
+} */
+
+
+
 /* GOOOD export const progressBars2 = () =>{
     let progress = document.querySelectorAll('.progress')
     //Tableau Progress

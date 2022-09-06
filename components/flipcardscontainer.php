@@ -1,3 +1,8 @@
 <section class="sectionFlipCards" id="languages">
-    <?php include 'flipcard.php'; ?>
+    <div class="flipCardsTitle">
+        <h3>Coordonnées</h3>
+    </div>
+    <div class="flipcards"> 
+        <?php include 'flipcard.php'; ?>
+    </div>
 </section>

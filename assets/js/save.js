@@ -284,7 +284,7 @@ card2.addEventListener('click', function () {
 
          /////////////////////////////////////////////////////////JS CV
          // Au chargement du DOM, avant tout le reste :
-document.addEventListener("DOMContentLoaded", function () {
+/* document.addEventListener("DOMContentLoaded", function () {
   const lineScrollInner = document.querySelector('.lineScrollInner');
 
   window.addEventListener('scroll', function () {
@@ -303,36 +303,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
   })
-})
+}) */
 
-// Function Link pour éviter d 'avoir à répéter la même fonction et cela permet d'éviter le #machin de l'ancre dans l'URL
-// Eléments cliquables
-let langagesLink = document.getElementById('langages');
-let presentationLink = document.getElementById('presentation');
-let contactMeLink = document.getElementById('goContactMe');
-/* let footerLink = document.getElementById('goToFooter');
- */// Eléments pointés
-let langagesLinkElement = document.getElementById('firstBoxLanguages');
-let presentationLinkElement = document.getElementById('about');
-let contactMeElement = document.getElementById('contactMe');
-/* let FooterElement = document.getElementById('foot');
- */// 1 tableau pour chaque groupe
-let linksArray = Array(presentationLink, langagesLink, contactMeLink);
-let elementsArray = Array(presentationLinkElement, langagesLinkElement, contactMeElement);
-// Fonction anchors()
-function anchors() {
-  for (let i = 0; i < elementsArray.length; i++) {
-    elementsArray[i]
-    linksArray.forEach((e) => {
-      e = linksArray[i]
-      if (e == elementsArray[i]) { }
-      e.addEventListener('click', function () {
-        elementsArray[i].scrollIntoView()
-      })
-    })
-  }
-}
-anchors();
+
 // Méthode pas trop optimisée :
 /* langagesLink.addEventListener('click',function(){
   
@@ -367,30 +340,15 @@ domReady(() => {
 
 //https://www.reddit.com/r/firefox/comments/fpptyj/firefox_content_security_policy_console_output/
 // Warnings dans la console, a priori ce serait en raison de Google Maps
-window.onload = changeContentAccordingToSizeWindow(), refreshSVG();
-
-//Shake shake shake !
-// Fonctions animation des barres de progression
-function animation() {
-  $('.html').animate({ width: '70%' }, 5000);
-  $('.css').animate({ width: '50%' }, 5000);
-  $('.javascript').animate({ width: '50%' }, 5000);
-  $('.php').animate({ width: '40%' }, 5000);
-};
-function animation2() {
-  $('.angular').animate({ width: '30%' }, 5000);
-  $('.jquery').animate({ width: '40%' }, 5000);
-  $('.AJAX').animate({ width: '30%' }, 5000);
-  $('.SQL').animate({ width: '40%' }, 5000);
-
-};
+/* window.onload = changeContentAccordingToSizeWindow(), refreshSVG();
+ */
 
 
 
 // Au scroll, lancer l'animation selon critères
 
 // Fonction permettant de modifier certains éléments (en CSS) en fonction de la taille de la fenêtre
-function changeContentAccordingToSizeWindow() {
+/* function changeContentAccordingToSizeWindow() {
   var div = (document.querySelectorAll('.title'));
   var divAll = [...div];
   // Si taille de la fenêtre supérieure à 600px alors j'applique certaines propriétés aux éléments dont la classe est title
@@ -409,7 +367,7 @@ function changeContentAccordingToSizeWindow() {
 }
 window.addEventListener('resize', changeContentAccordingToSizeWindow);
 window.addEventListener('resize', refreshSVG);
-
+ */
 
 // Fonctions permettant d'afficher ou masquer le bouton retour haut de page, si l'on se trouve en haut ou bas de page
 // Si l'on est sous 20 pixels du top OU BIEN si l'on est en bas de page >>>> display = none
@@ -1023,17 +981,17 @@ window.addEventListener('scroll', function () {
 });
 // Fonction RETOUR en HAUT DE PAGE
 // Si clic sur le bouton, retour haut de page
-function topFunction() {
+/* function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 };
 window.onscroll = function () {
   setTimeout(window.scrollFunction(), 200);
 
-};
+}; */
 
 // Slide des 3 derniers boutons en fonction du niveau du scroll
-function slideButtons() {
+/* function slideButtons() {
   var test = document.querySelector('.movingBlock');
   let breakPoint4 = 200;
 // (window.pageYOffset  > breakPoint4)
@@ -1047,14 +1005,14 @@ function onReloadPageSlideButtons() {
   if (window.innerHeight > 300) {
     test.classList.add('movingBlockSlide');
   }
-}
+} */
 
 
 
   
 // problème arrive à la fin de l'animation et dure le même temps quand on scrolle
 // Au scroll, lancer l'animation selon critères
-function isBreakPointReached(){
+/* function isBreakPointReached(){
    let breakPoint3 = 300;
   let element;
   window.addEventListener('scroll', function(){
@@ -1079,4 +1037,242 @@ function isBreakPointReached(){
   }
   isBreakPointReached()
 window.addEventListener('scroll', slideButtons)
-window.addEventListener('load', onReloadPageSlideButtons)
+window.addEventListener('load', onReloadPageSlideButtons) */
+
+
+/* CANVAS EYEBALLS */
+/* .canvasContainer{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+#canvas1{
+  border:5px solid white;
+  width:100%;
+  height:100%;
+  background-color: #fff;
+} */
+/* CARDS + CARDS CONTAINER */
+/* .sectionCards {
+  height: 500px;
+  background-color: white;
+  border: 5px solid red;
+  display: flex;
+  justify-content: space-evenly;
+  transition: background-color 2s ease;
+}
+.sectionCardsChangeColor {
+  background-color: orange;
+}
+.sectionCardsChangeFlexDirection {
+  flex-direction: column;
+}
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 30px;
+  margin: 80px 0;
+  border: 5px solid rgb(0, 95, 179);
+}
+.card-wrapper {
+  position: relative;
+  min-height: 350px;
+  perspective: 2000;
+  perspective-origin: top;
+}
+.card-wrapper:hover .card {
+  transform: rotateY(180deg);
+}
+.cardsRotation {
+  transform: rotateY(180deg);
+}
+.card {
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+  color: white;
+  font-weight: bold;
+}
+.card-front p {
+
+  line-height: 35px;
+}
+
+
+.card-back {
+  background: #0f0b2d;
+  transform: rotateY(180deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-back a {
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: normal;
+  background-color: orange;
+
+  font-weight: bold;
+  color: #fff;
+  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  border-radius: 8px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.card-front {
+  background: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+} */
+/* h1 {
+  margin: 20px 0;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed grey;
+}
+h1 span {
+  display: block;
+}
+h1 span:nth-child(1) {
+  font-weight: normal;
+  color: rgb(220, 148, 148);
+} */
+
+
+/* TREE */
+/* .sectionTree1 {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Vline {
+  z-index: 1;
+  height: 0px;
+  width: 5px;
+  transition: height 10s ease;
+  background-color: blue;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  position: absolute;
+}
+.Hline {
+  z-index: 2;
+  height: 5px;
+  width: 0px;
+  transition: width 10s ease;
+  background-color: yellow;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  position: absolute;
+}
+.VerticalLineHeight {
+  height: 300px;
+  width: 5px;
+}
+
+.HorizontalLineWidth {
+  width: 300px;
+  height: 5px;
+} */
+
+/* .sectionTree2 {
+  height: 50px;
+  border: 3px solid white;
+  background-color: palevioletred;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#buttonTree {
+  width: 100px;
+} */
+/* TEST */
+/* .sectionTest {
+  border: 3px solid white;
+} */
+
+/* NAVBAR */
+/* .container {
+  font-size: 20px;
+} */
+/* nav {
+  background-color: #1e3d59;
+  font-size: larger;
+  transition: 2s ease-in-out;
+  right: 0;
+  top: 0;
+} */
+
+/* links */ /* 
+a.nav-link:hover {
+  color: #ffc13b
+}
+a.nav-link {
+  color:#f5f0e1;
+}
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  outline: none;
+}
+.navbar-toggler {
+  width: 47px;
+  height: 34px;
+  background-color: red;
+  border: none;
+}
+.navbar-toggler .line {
+  width: 100%;
+  float: left;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 5px;
+}
+#presentation:hover,
+#langages:hover,
+#goContactMe:hover,
+#formations:hover {
+  cursor: pointer;
+} */
+/* Animation ligne horizontale sous le lien*/ /* 
+.nav-link {
+  display: inline-block;
+  position: relative;
+}
+.nav-link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transition: transform 0.25s ease-out;
+}
+.nav-link:hover:after {
+  transform: scaleX(1);
+} */

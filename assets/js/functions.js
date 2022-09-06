@@ -23,17 +23,6 @@ export const removeClassFromElements = (elementsArray, classToRemove) => {
     });
 }
 
-/* const item1 = document.getElementById('item1')
-const animInfo = () => {
-    item1.addEventListener('mouseover', ()=>{
-        let item1Sup = document.querySelector('.item1Sup')
-        let item1Inf = document.querySelector('.item1Inf')
-       
-        item1Sup.style.height = '80%'
-        item1Inf.style.height = '20%'
-     
-     })
-}
-animInfo() */
+
 
  

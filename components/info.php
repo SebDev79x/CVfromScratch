@@ -29,6 +29,11 @@
   <article class="articleInfo item item3">
   <div class="item3Sup itemTitle">DVT</div>
     <div class="item3Inf itemContent">
+    <div class="socialIcons">
+                <p><i class="fa fa-calendar"></i> 10 / 04 /1979</p>
+                <p><i class="fa fa-car"></i> Permis B + véhicule</p>
+
+            </div>
 </div>
   </article>
   <article class="articleInfo item item4">    
