@@ -20,12 +20,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <script src="https://kit.fontawesome.com/c95e83d52d.js" crossorigin="anonymous" defer></script>
+
 </head>
 
 <body>
-     <!-- LOGO -->
-     <?php include 'components/logo.php'; ?>
+    <!-- LOGO -->
+    <?php include 'components/logo.php'; ?>
     <!-- HEADER -->
     <?php include 'components/header.php'; ?>
     <!-- NAVBAR -->
@@ -33,9 +35,9 @@
     <!-- SCROLL LINE -->
     <?php include 'components/scrollline.php'; ?>
     <!-- IDENTITY BLOCK -->
-    <?php include 'components/identity.php'; ?>    
-     <!-- INFO -->
-     <?php include 'components/info.php'; ?>
+    <?php include 'components/identity.php'; ?>
+    <!-- INFO -->
+    <?php include 'components/info.php'; ?>
     <!-- CONTACT -->
     <?php include 'components/contact.php'; ?>
     <!-- FLIPCARDS -->
@@ -54,10 +56,10 @@
  -->
     <script src="assets/js/scrolltotop.js"></script>
     <script src="assets/js/scrollline.js"></script>
-        <script src="assets/js/anchors.js"></script>
+    <script src="assets/js/anchors.js"></script>
 
-<!--     <script src="assets/js/evaluations.js" type="module"></script>
- -->    <script src="assets/js/hidenavbar.js"></script>
+    <!--     <script src="assets/js/evaluations.js" type="module"></script>
+ -->
     <script src="assets/js/form.js" type="module"></script>
     <script src="assets/js/fc.js" type="module"></script>
     <script src="assets/js/tree.js" type="module"></script>
@@ -68,7 +70,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    
+
 
 </body>
 

@@ -18,7 +18,7 @@
             <div class="googleMaps">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20672.799933371458!2d3.058829!3d49.63357!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6e5a1b29ed30eca5!2sMairie!5e0!3m2!1sfr!2sfr!4v1662360736217!5m2!1sfr!2sfr"
-                    width="480" height="260" style="border:5px solid #f5f0e1" allowfullscreen="" loading="lazy"
+                    width="380" height="260" style="border:5px solid #f5f0e1" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>

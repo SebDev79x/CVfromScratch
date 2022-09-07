@@ -4,12 +4,7 @@
   --main-color: #f5f0e1;
   font-size: 16px;
 }
-/*  you start with mobile version
-@media (min-width: 500px) { ... } // will match only screen width >= 500px
-@media (max-width: 768px) { ... } // will match only screen width >= 768px
-@media (min-width: 768px) and (max-width: 990px) { ... } // will match only screen width >= 768px and < 900px (could be tablets also)
-@media (min-width: 991px) { ... } // match also ipad on landscape mode
-@media (min-width: 1200px) { ... } */ /* for desktops */
+/* MEMO text-indent: -9999px*/
 * {
   padding: 0;
   margin: 0;
@@ -37,29 +32,33 @@ header {
   transition: all 0.8s ease-in-out;
   align-items: center;
   justify-content: center;
+
 }
 .navbar {
   top: 120px;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
-.navbar a i {
+header nav a span  {
   cursor: pointer;
 }
-/* header span {
-  color: #f5f0e1;
-  font-weight: bolder;
-  transition: letter-spacing 0.2s linear;
-} */
+header nav a:hover {
+  color: #ff6e40;
+}
+header nav a > .textMenu {
+  transition:letter-spacing 0.8s ease-in-out;
+}
+header nav a > .textMenu:hover {
+  letter-spacing: 0.3rem;
+}
 header nav a {
   display: inline-block;
   position: relative;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #f5f0e1;
   margin: 2rem 0;
-  transition: letter-spacing 0.2s linear;
   text-decoration: none;
+  font-weight: bold;
 }
 header nav a::after {
   content: '';
@@ -73,19 +72,29 @@ header nav a::after {
   transition: transform 0.25s ease-out;
 }
 
-header nav a:hover:after {
+header nav a:hover::after {
   transform: scaleX(1);
+  background-color: #ff6e40;
 }
-
+/* header nav a span > i:hover::after {
+  transform: scaleX(1);
+  background-color: #ff6e40;
+} */
+/* 
 header .navbar a:hover {
   letter-spacing: 0.2rem;
   color: #ff6e40;
-}
-header span:hover {
+} */
+/* header span:hover {
   letter-spacing: 0.2rem;
   color: #ff6e40;
+} */
+.iconMenu {
+  display: block;
 }
-
+.textMenu {
+  display: none;
+}
 #menu-bars {
   position: fixed;
   top: 1rem;
@@ -98,37 +107,6 @@ header span:hover {
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
-}
-@media (max-width: 991px) {
-  html {
-    font-size: 55%;
-  }
-  body {
-    padding: 0;
-  }
-  #menu-bars {
-    display: initial;
-  }
-  header {
-    left: -120%;
-  }
-  header.active {
-    left: 0%;
-  }
-  header nav a {
-    margin: 1rem 0;
-  }
-}
-@media (max-width: 450px) {
-  html {
-    font-size: 50%;
-  }
-  header {
-    width: 100%;
-  }
-  header nav a {
-    margin: 1rem 0;
-  }
 }
 
 /* INFO */
@@ -221,6 +199,9 @@ header span:hover {
   justify-content: center;
 }
 /* CONTACT */
+iframe {
+  border-radius: 15px;
+}
 .sectionContact {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -231,11 +212,11 @@ header span:hover {
   padding: 20px;
   border-radius: 15px;
   color: #f5f0e1;
-  height:90%;
+  height: 90%;
 }
 .wrapperForm {
   grid-area: item2;
-  background: #1e3d59 ;
+  background: #1e3d59;
   border-radius: 15px;
 }
 .coords {
@@ -347,7 +328,7 @@ header span:hover {
   background: #1e3d59;
   display: flex;
   flex-direction: column;
-margin:20px;
+  margin: 20px;
 }
 .flipCardsTitle {
   height: 10%;
@@ -364,18 +345,17 @@ margin:20px;
   color: #1e3d59;
   font-size: 2rem;
 }
-.flipcards{
+.flipcards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 300px 300px;
   row-gap: 2rem;
-  column-gap:2rem;
+  column-gap: 2rem;
   grid-template-areas:
     'item1 item2 item3 item4'
     'item5 item6 item7 item8';
   justify-items: center;
   align-items: center;
-
 }
 @media screen and (max-width: 1366px) {
   .flipcards {
@@ -434,30 +414,35 @@ margin:20px;
 .infHalfBack {
   width: 100%;
   background: #ff6e40;
-  color:  #1e3d59;
+  color: #1e3d59;
   font-weight: bold;
-
+}
+.supHalfFront {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.supHalfFront > i {
+  font-size: 4rem;
 }
 .infHalfFront,
 .supHalfBack {
   width: 100%;
   background: #f5f0e1;
-  color:  #1e3d59;
+  color: #1e3d59;
   font-weight: bold;
- 
 }
 .supHalfFront,
 .supHalfBack {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   font-size: 1.5rem;
-
 }
-.supHalfFront{
+.supHalfFront {
   height: 80%;
 }
-.infHalfFront{
-  height:20%;
+.infHalfFront {
+  height: 20%;
 }
 .infHalfFront,
 .infHalfBack {
@@ -482,6 +467,9 @@ margin:20px;
   right: 30px;
   bottom: 12px;
   cursor: pointer;
+}
+.spanPercent {
+  font-size: 2rem;
 }
 /* CHRONO */
 
@@ -537,70 +525,6 @@ margin:20px;
 }
 .opacityDates {
   opacity: 1;
-}
-
-/* IDENTITY */
-.sectionIdentity {
-  display: flex;
-  flex-direction: row;
-  background: #1e3d59;
-  color: #f5f0e1;
-}
-.contentJob {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
-  /*   border: 2px solid red;
- */
-  transition: all 0.2s linear;
-}
-.contentJob2 {
-  flex: 1;
-  /*   border: 2px solid yellow;
- */ /*   background-image: url('../img/logo11.png');
-  background-size:auto;
-  background-position: center;
-  background-repeat: no-repeat;  */
-}
-.logo {
-  /*   background-image: url('../img/logo11.png');
- */
-  width: 12rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10001;
-
-  /*   background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  */
-  /*  border-radius: 0.5rem;
-  padding: 1rem 1.5rem;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none; */
-}
-.contentJob:hover {
-  letter-spacing: 0.2rem;
-  color: #ff6e40;
-}
-.myJob {
-  font-size: 3rem;
-  font-weight: bolder;
-}
-
-@media screen and (max-width: 768px) {
-  .myJob {
-    font-size: 1.5rem;
-    letter-spacing: 0;
-  }
-  .contentJob:hover {
-    color: #ff6e40;
-  }
 }
 
 /* BOUTON Retour haut de page */
@@ -674,14 +598,11 @@ margin:20px;
   width: 150px;
 }
 
-
 .progress {
   height: 5px !important;
   transition: width 2s;
-  width:0;
+  width: 0;
 }
-
-
 
 /* FOOTER */
 #footer {
@@ -717,7 +638,6 @@ margin:20px;
   transform: translateY(-5px);
 }
 
-
 /* EXPERIENCE */
 .sectionExperience {
   font-weight: bold;
@@ -725,12 +645,12 @@ margin:20px;
 }
 
 /* FORM INPUTS etc.*/
-#form{
-display: flex;
-flex-direction: column;
-justify-content:space-evenly;
-align-items: center;
-height:90%;
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 90%;
   /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 150px 150px 150px;
@@ -742,90 +662,152 @@ height:90%;
   'item5 item6';
   border: 2px solid yellow; */
 }
-.inputBox{
+.inputBox {
   position: relative;
 }
-/* .item1{
-  grid-area: item1;
-}
-.item2{
-  grid-area: item2;
-}
-.item3{
-  grid-area: item3;
-}
-.item4{
-  grid-area: item4;
-}
-.item5{
-  grid-area: item5;
-}
- .item6{
-  grid-area: item6;
-} */
-.inputBox input,.inputBox textarea{
-  width:100%;
-  padding:10px;
+.inputBox input,
+.inputBox textarea {
+  width: 100%;
+  padding: 10px;
   border-radius: 15px;
-  border:1px solid #f5f0e1;
+  border: 2px solid #f5f0e1;
   outline: none;
-  color:#f5f0e1;
+  color: #f5f0e1;
   font-size: 1rem;
   transition: 0.5s;
   background: #1e3d59;
 }
-/* .inputBox textarea{
-  width:100%;
-  padding:10px;
-  background: #f5f0e1;
-  border-radius: 15px;
-  border:1px solid #ff6e40;
 
-  outline: none;
-  color:#1e3d59;
-  font-size: 1rem;
-
-} */
-.inputBox span{
+.inputBox span {
   position: absolute;
-left:0;
-padding: 10px;
-pointer-events: none;
-font-size: 1.1rem;
-color:#f5f0e1;
-transition: 0.5s;
-
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1.1rem;
+  color: #f5f0e1;
+  transition: 0.5s;
 }
-.inputBox input:valid ~ span, .inputBox input:focus ~ span,
-.inputBox textarea:valid ~ span, .inputBox textarea:focus ~ span{
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span,
+.inputBox textarea:valid ~ span,
+.inputBox textarea:focus ~ span {
   color: #f5f0e1;
   transform: translateX(10px) translateY(-7px);
   padding: 0 10px;
   font-size: 0.65rem;
   background: #1e3d59;
-  border-left: 1px solid #f5f0e1;
-  border-right: 1px solid #f5f0e1;
+  border-left: 2px solid #f5f0e1;
+  border-right: 2px solid #f5f0e1;
 }
-.inputBox input:valid, .inputBox input:focus,
-.inputBox textarea:valid, .inputBox textarea:focus{
-  border: 1px solid #ff6e40;
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox textarea:valid,
+.inputBox textarea:focus {
+  border: 2px solid #ff6e40;
 }
-iframe{
-  border-radius: 15px;
-}
-.inputBoxDuoRow{
-  width:100%;
-/*   border: 2px solid red;
- */  display: flex;
+
+.inputBoxDuoRow {
+  width: 100%;
+  display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-/* .inputBoxDuoColumn{
-  border: 2px solid red;
-  width:100%;
 
+/* IDENTITY */
+.sectionIdentity {
+  display: flex;
+  flex-direction: row;
+  background: #1e3d59;
+  color: #f5f0e1;
+}
+.contentJob {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-} */
+  padding: 50px;
+  transition: all 0.2s ease-in-out;
+}
+.contentJob:hover {
+  color: #ff6e40;
+  letter-spacing: 0.2rem;
+}
+.myJob {
+  font-weight: bolder;
+}
+.logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10001;
+}
+/* POT POURRI MEDIA QUERIES */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .myJob {
+    font-size: 1.5rem;
+  }
+  header {
+    width: 50%;
+  }
+  header nav a {
+    margin: 1rem 0;
+    font-size: 2rem;
+  }
+
+  #menu-bars {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    margin-top: 2rem;
+  }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) {
+  .iconMenu {
+    display: none;
+  }
+  .textMenu {
+    display: block;
+  }
+  .myJob {
+    font-size: 2rem;
+  }
+ /*  .navbar{
+    align-items: flex-start;
+
+  } */
+ 
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .myJob {
+    font-size: 3rem;
+  }
+}
+/* Large devices (less than ) */
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    padding: 0;
+  }
+  #menu-bars {
+    display: initial;
+  }
+  header {
+    left: -120%;
+  }
+  header.active {
+    left: 0%;
+  }
+  header nav a {
+    margin: 1rem 0;
+  }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
