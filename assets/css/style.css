@@ -204,11 +204,12 @@ iframe {
 }
 .sectionContact {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   grid-template-rows: 600px;
   row-gap: 2rem;
   column-gap: 2rem;
-  grid-template-areas: 'item1 item1 item2 item2';
+  grid-template-areas: 
+  'item1 item1 item1 item2 item2 item2 item2 item2';
   padding: 20px;
   border-radius: 15px;
   color: #f5f0e1;
@@ -677,8 +678,34 @@ iframe {
   transition: 0.5s;
   background: #1e3d59;
 }
-
-.inputBox span {
+.inputBox span.spanAnimlabel {
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  pointer-events: none;
+  font-size: 1.1rem;
+  color: #f5f0e1;
+  transition: 0.5s;
+}
+/* .inputBox input:valid ~ span.spanAnimlabel,
+ */.inputBox input:focus ~ span.spanAnimlabel,
+/* .inputBox textarea:valid ~ span.spanAnimlabel,
+ */.inputBox textarea:focus ~ span.spanAnimlabel {
+  color: #f5f0e1;
+  transform: translateX(10px) translateY(-7px);
+  padding: 0 10px;
+  font-size: 0.65rem;
+  background: #1e3d59;
+  border-left: 2px solid #f5f0e1;
+  border-right: 2px solid #f5f0e1;
+}
+/* .inputBox input:valid,
+ */.inputBox input:focus,
+/* .inputBox textarea:valid,
+ */.inputBox textarea:focus {
+  border: 2px solid #ff6e40;
+}
+/* .inputBox span {
   position: absolute;
   left: 0;
   padding: 10px;
@@ -704,7 +731,7 @@ iframe {
 .inputBox textarea:valid,
 .inputBox textarea:focus {
   border: 2px solid #ff6e40;
-}
+} */
 
 .inputBoxDuoRow {
   width: 100%;

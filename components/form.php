@@ -23,15 +23,15 @@
 <form method="POST" action="#" id="form">
     <div class="inputBoxDuoRow">
         <div class="inputBox">
-            <input type="text" name="firstName" id="firstName" required>
-            <span>Prénom</span>
+            <input type="text" name="firstName" id="firstName" >
+            <span class="spanAnimlabel">Prénom</span>
             <span class="spanForm firstName"></span>
 
         </div>
 
         <div class="inputBox">
-            <input type="text" name="lastName" id="lastName" required>
-            <span>Nom</span>
+            <input type="text" name="lastName" id="lastName" >
+            <span class="spanAnimlabel">Nom</span>
             <span class="spanForm lastName"></span>
 
         </div>
@@ -40,14 +40,14 @@
 
     <div class="inputBoxDuoRow">
         <div class="inputBox">
-            <input type="tel" name="phone" id="phone" required>
-            <span>Téléphone</span>
+            <input type="tel" name="phone" id="phone" >
+            <span class="spanAnimlabel">Téléphone</span>
             <span class="spanForm phone"></span>
 
         </div>
         <div class="inputBox">
-            <input type="email" name="email" id="email" required>
-            <span>Email</span>
+            <input type="email" name="email" id="email" >
+            <span class="spanAnimlabel">Email</span>
             <span class="spanForm email"></span>
 
         </div>
@@ -57,16 +57,16 @@
 
     <div class="inputBoxDuoRow">
         <div class="inputBox">
-            <input type="text" name="subject" id="subject" required>
-            <span>Sujet</span>
+            <input type="text" name="subject" id="subject" >
+            <span class="spanAnimlabel">Sujet</span>
             <span class="spanForm subject"></span>
 
         </div>
 
 
         <div class="inputBox">
-            <textarea name="messageContact" id="messageContact" cols="18" rows="5" required></textarea>
-            <span>Message</span>
+            <textarea name="messageContact" id="messageContact" cols="18" rows="5" ></textarea>
+            <span class="spanAnimlabel">Message</span>
             <span class="spanForm messageContact"></span>
 
         </div>
