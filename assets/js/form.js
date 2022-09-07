@@ -79,7 +79,8 @@ const fetchDataFromForm = async (formatedFormData) => {
                             icon: 'warning',
                             confirmButtonText: 'Entendu',
                             showCancelButton: true,
-                            heightAuto: true
+                            heightAuto: true,
+                            
                         }).then((action) => {
 
                             if (action.isConfirmed) {
@@ -95,26 +96,27 @@ const fetchDataFromForm = async (formatedFormData) => {
                                 Swal.fire({
                                     title: 'Super !',
                                     text: 'Message envoyé ! Merci !',
-                                    icon: 'success'
+                                    icon: 'success',
+                                    
                                 }).then((action) => {
-                                    hideSpansIfFormOk(spansAsArray)
-                                    stateX = false
-                                    if (action.isConfirmed) {
-                                        submitForm()
-                                    }
-                                })
-                            }
+                                        hideSpansIfFormOk(spansAsArray)
+                                        stateX = false
+                                        if (action.isConfirmed) {
+                                            submitForm()
+                                        }
+                                    })
+                    }
                         }, 3000)
-                    })
-                    // Check if every element in message == "Champ correct" => form is reset or not
-                    message.every(checkString) ? [fireSwalFormOk()] : false
-                    fireSwalFormOk2()
-                })
             })
-            .catch((err) => console.log("err", err))
+        // Check if every element in message == "Champ correct" => form is reset or not
+        message.every(checkString) ? [fireSwalFormOk()] : false
+        fireSwalFormOk2()
+    })
+})
+            .catch ((err) => console.log("err", err))
     } catch (err) {
-        console.log(err, "erreur du try catch");
-    }
+    console.log(err, "erreur du try catch");
+}
 }
 formX.addEventListener('submit', function (event) {
     event.preventDefault()

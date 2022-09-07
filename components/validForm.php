@@ -10,17 +10,27 @@ $regPhone2 =  '/^((\+)33|0)[1-9](0){8}$/';
 // Username, subject, contact 
 $regexName = '/^([A-Za-zàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð\?\-\s]{2,50})$/';
 
-if (empty($_POST['myData']['username'])) {
+if (empty($_POST['myData']['firstName'])) {
     // Si soumission form et input vide
-    $message['username'] = 'Veuillez saisir vos nom et prénom s\'il vous plaît.';
-} else if (!preg_match($regexName, $_POST['myData']['username'])) {
+    $message['firstName'] = 'Veuillez saisir votre prénom s\'il vous plaît.';
+} else if (!preg_match($regexName, $_POST['myData']['firstName'])) {
     // Si soumission form et saisie non conforme
-    $message['username'] = 'La saisie semble invalide...';
+    $message['firstName'] = 'La saisie semble invalide...';
 } else {
     // Validation    
-    $message['username'] = 'Champ correct';
+    $message['firstName'] = 'Champ correct';
 }
 
+if (empty($_POST['myData']['lastName'])) {
+    // Si soumission form et input vide
+    $message['lastName'] = 'Veuillez saisir votre nom s\'il vous plaît.';
+} else if (!preg_match($regexName, $_POST['myData']['lastName'])) {
+    // Si soumission form et saisie non conforme
+    $message['lastName'] = 'La saisie semble invalide...';
+} else {
+    // Validation    
+    $message['lastName'] = 'Champ correct';
+}
 
 if (empty($_POST['myData']['email'])) {
     // Si soumission form et input vide

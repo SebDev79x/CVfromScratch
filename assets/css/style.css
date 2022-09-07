@@ -712,7 +712,10 @@ iframe {
   flex-direction: row;
   justify-content: space-evenly;
 }
-
+.swal2-shown {
+  overflow: unset !important;
+  padding-right: 0px !important;
+}
 /* IDENTITY */
 .sectionIdentity {
   display: flex;
