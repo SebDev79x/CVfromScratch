@@ -23,6 +23,13 @@ export const removeClassFromElements = (elementsArray, classToRemove) => {
     });
 }
 
-
+export const removeClassFromElements2 = (elementsArray, classToRemove) => {
+    // Array.from(elementsArray).reverse() => to reverse the nodelist
+    elementsArray.forEach((element, i) => {
+        setTimeout(() => {
+            element.classList.remove(classToRemove);
+        }, i * 10);
+    });
+}
 
  

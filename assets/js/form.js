@@ -1,5 +1,6 @@
 const spanForm = document.querySelectorAll('.spanForm')
 const spansAsArray = Array.from(spanForm)
+console.log("spansAsArray",spansAsArray);
 // Check if message == "Champ correct" => boolean
 const checkString = (string) => {
     return string == "Champ correct"
@@ -32,6 +33,7 @@ const fetchDataFromForm = async (formatedFormData) => {
                 data = JSON.parse(data)
                 // https://softauthor.com/javascript-htmlcollection-vs-nodelist/
                 const message = Object.values(data.message)
+                console.log("MESSAGE LISTE",message);
                 spansAsArray.forEach(function (el, i) {
                     // Change message color
                     const toggleColor = () => {
@@ -71,7 +73,7 @@ const fetchDataFromForm = async (formatedFormData) => {
                         })
                     } */
                     let stateX = false
-                    const fireSwalFormOk = () => {
+                /*     const fireSwalFormOk = () => {
                         console.log("response swal");
                         Swal.fire({
                             title: 'Alors !??',
@@ -87,8 +89,8 @@ const fetchDataFromForm = async (formatedFormData) => {
                                 stateX = true
                             }
                         })
-                    }
-                    const fireSwalFormOk2 = (() => {
+                    } */
+             /*        const fireSwalFormOk2 = (() => {
                         console.log("response swal222222");
                         console.log("message", message);
                         setTimeout(() => {
@@ -107,11 +109,11 @@ const fetchDataFromForm = async (formatedFormData) => {
                                     })
                     }
                         }, 3000)
-            })
+            }) */
         // Check if every element in message == "Champ correct" => form is reset or not
-        message.every(checkString) ? [fireSwalFormOk()] : false
-        fireSwalFormOk2()
-    })
+        message.every(checkString) ? console.log("TOUT EST OK") : console.log("RIEN N'EST BON") 
+/*         fireSwalFormOk2()
+ */    })
 })
             .catch ((err) => console.log("err", err))
     } catch (err) {

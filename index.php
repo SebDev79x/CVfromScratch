@@ -61,6 +61,8 @@
     <!--     <script src="assets/js/evaluations.js" type="module"></script>
  -->
     <script src="assets/js/form.js" type="module"></script>
+    <script src="assets/js/input.js" type="module"></script>
+
     <script src="assets/js/fc.js" type="module"></script>
     <script src="assets/js/tree.js" type="module"></script>
     <script src="assets/js/chrono.js" type="module"></script>

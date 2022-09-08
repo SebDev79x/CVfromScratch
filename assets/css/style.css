@@ -215,11 +215,6 @@ iframe {
   color: #f5f0e1;
   height: 90%;
 }
-.wrapperForm {
-  grid-area: item2;
-  background: #1e3d59;
-  border-radius: 15px;
-}
 .coords {
   grid-area: item1;
   background: #1e3d59;
@@ -264,21 +259,7 @@ iframe {
   transform: translateY(-5px);
 }
 
-.btn.btn2 {
-  display: inline-block;
-  color: black;
-}
-.btn.btn3 {
-  display: inline-block;
-  color: black;
-}
-.spanForm {
-  opacity: 1;
-  transition: opacity 3000ms ease-in-out;
-}
-.fade {
-  opacity: 0;
-}
+
 @media screen and (min-width: 1367px) {
   .socialIcons p i,
   .coords,
@@ -663,6 +644,28 @@ iframe {
   'item5 item6';
   border: 2px solid yellow; */
 }
+
+.wrapperForm {
+  grid-area: item2;
+  background: #1e3d59;
+  border-radius: 15px;
+}
+.btn.btn2 {
+  display: inline-block;
+  color: black;
+}
+.btn.btn3 {
+  display: inline-block;
+  color: black;
+}
+.spanForm {
+  opacity: 1;
+  transition: opacity 3000ms ease-in-out;
+  font-size: 1rem;
+}
+.fade {
+  opacity: 0;
+}
 .inputBox {
   position: relative;
 }
@@ -687,9 +690,9 @@ iframe {
   color: #f5f0e1;
   transition: 0.5s;
 }
-/* .inputBox input:valid ~ span.spanAnimlabel,
+/* .inputBox input[required]:valid  ~ span.spanAnimlabel,
  */.inputBox input:focus ~ span.spanAnimlabel,
-/* .inputBox textarea:valid ~ span.spanAnimlabel,
+/* .inputBox textarea[required]:valid  ~ span.spanAnimlabel,
  */.inputBox textarea:focus ~ span.spanAnimlabel {
   color: #f5f0e1;
   transform: translateX(10px) translateY(-7px);
@@ -699,10 +702,28 @@ iframe {
   border-left: 2px solid #f5f0e1;
   border-right: 2px solid #f5f0e1;
 }
-/* .inputBox input:valid,
- */.inputBox input:focus,
-/* .inputBox textarea:valid,
- */.inputBox textarea:focus {
+input:not(:placeholder-shown) ~ span.spanAnimlabel,textarea:not(:placeholder-shown) ~ span.spanAnimlabel{
+  color: #f5f0e1;
+  transform: translateX(10px) translateY(-7px);
+  padding: 0 10px;
+  font-size: 0.65rem;
+  background: #1e3d59;
+  border-left: 2px solid #f5f0e1;
+  border-right: 2px solid #f5f0e1;
+}
+/* .testInput{  
+  color: #f5f0e1;
+  transform: translateX(10px) translateY(-7px);
+  padding: 0 10px;
+  font-size: 0.65rem;
+  background: #1e3d59;
+  border-left: 2px solid #f5f0e1;
+  border-right: 2px solid #f5f0e1;
+} */
+.inputBox input:valid,
+.inputBox input:focus,
+.inputBox textarea:valid,
+.inputBox textarea:focus {
   border: 2px solid #ff6e40;
 }
 /* .inputBox span {
@@ -739,6 +760,7 @@ iframe {
   flex-direction: row;
   justify-content: space-evenly;
 }
+/* SWAL/SweetAlert.js */
 .swal2-shown {
   overflow: unset !important;
   padding-right: 0px !important;
