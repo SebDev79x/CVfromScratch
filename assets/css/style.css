@@ -18,6 +18,15 @@ body {
   background: #f5f0e1;
   padding-left: 13rem;
 }
+.logo {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+flex:1;
+max-width:100%;
+    height:auto;
+}
 header {
   position: fixed;
   top: 0;
@@ -27,17 +36,19 @@ header {
   z-index: 1000;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 13rem;
   text-align: center;
   transition: all 0.8s ease-in-out;
   align-items: center;
-  justify-content: center;
-
 }
 .navbar {
-  top: 120px;
+  top: 50px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  flex:4;
+
 }
 header nav a span  {
   cursor: pointer;
@@ -107,6 +118,7 @@ header .navbar a:hover {
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
+  border:2px solid #ff6e40;
 }
 
 /* INFO */
@@ -121,6 +133,7 @@ header .navbar a:hover {
     'item4 item5 item5 item3';
   padding: 20px;
 }
+
 .sectionInfo > article {
   border-radius: 15px;
 }
@@ -182,8 +195,11 @@ header .navbar a:hover {
   align-items: center;
   text-justify: inter-word;
 }
-
+.firstSentence{
+  text-indent: 40px;
+}
 .itemContent {
+  
   background: #1e3d59;
   height: 80%;
   border-bottom-left-radius: 15px;
@@ -205,9 +221,9 @@ iframe {
 .sectionContact {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: 600px;
-  row-gap: 2rem;
-  column-gap: 2rem;
+  grid-template-rows: 900px;
+  row-gap: 1rem;
+  column-gap: 1rem;
   grid-template-areas: 
   'item1 item1 item1 item2 item2 item2 item2 item2';
   padding: 20px;
@@ -276,8 +292,7 @@ iframe {
   .sectionContact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 600px 600px;
-
+    grid-template-rows: 600px 1000px;
     grid-template-areas:
       'item1 item1'
       'item2 item2';
@@ -296,12 +311,7 @@ iframe {
     display: flex;
     flex-direction: column;
   }
-  .buttonContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+  
 } */
 
 /* FLIPCARDS */
@@ -336,15 +346,19 @@ iframe {
   grid-template-areas:
     'item1 item2 item3 item4'
     'item5 item6 item7 item8';
-  justify-items: center;
-  align-items: center;
+ padding:20px;
+ justify-items: center;
+ align-items: center;
 }
 @media screen and (max-width: 1366px) {
   .flipcards {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+    row-gap: 1rem;
+  column-gap: 1rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   .flipcards {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 300px);
@@ -628,11 +642,12 @@ iframe {
 
 /* FORM INPUTS etc.*/
 #form {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
   height: 90%;
+  align-items: center;
   /* display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 150px 150px 150px;
@@ -650,50 +665,75 @@ iframe {
   background: #1e3d59;
   border-radius: 15px;
 }
-.btn.btn2 {
-  display: inline-block;
-  color: black;
-}
-.btn.btn3 {
-  display: inline-block;
-  color: black;
-}
-.spanForm {
-  opacity: 1;
-  transition: opacity 3000ms ease-in-out;
+
+.btnSubmit {
+  color: #1e3d59;
+  background-color: #f5f0e1;
+  border-radius: 15px;
   font-size: 1rem;
+  border:2px solid #f5f0e1;  
+
 }
+
+.btnSubmit:hover,
+.btnSubmit:active,
+.btnSubmit:focus,
+.btnSubmit.active {
+  background: #1e3d59;
+  color: #f5f0e1;
+  border-radius: 15px;
+
+border:2px solid #ff6e40;  
+}
+
 .fade {
   opacity: 0;
 }
 .inputBox {
   position: relative;
+  margin:20px;
+  width:100%;
 }
 .inputBox input,
 .inputBox textarea {
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   border-radius: 15px;
-  border: 2px solid #f5f0e1;
   outline: none;
   color: #f5f0e1;
-  font-size: 1rem;
+  font-size: 1.1rem;
   transition: 0.5s;
   background: #1e3d59;
+  border: 2px solid #f5f0e1;
+
 }
 .inputBox span.spanAnimlabel {
   position: absolute;
   left: 0;
-  padding: 10px;
+  padding: 20px;  
   pointer-events: none;
   font-size: 1.1rem;
   color: #f5f0e1;
   transition: 0.5s;
 }
+.inputBox span.spanForm {
+  position: absolute;
+  margin-top:10px;
+
+}
+.spanForm {
+  opacity: 1;
+  transition: opacity 3000ms ease-in-out;
+  font-size: 1rem;
+  color: #ff6e40;
+
+}
 /* .inputBox input[required]:valid  ~ span.spanAnimlabel,
  */.inputBox input:focus ~ span.spanAnimlabel,
 /* .inputBox textarea[required]:valid  ~ span.spanAnimlabel,
- */.inputBox textarea:focus ~ span.spanAnimlabel {
+ */.inputBox textarea:focus ~ span.spanAnimlabel,
+ input:not(:placeholder-shown) ~ span.spanAnimlabel,
+ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
   color: #f5f0e1;
   transform: translateX(10px) translateY(-7px);
   padding: 0 10px;
@@ -701,30 +741,15 @@ iframe {
   background: #1e3d59;
   border-left: 2px solid #f5f0e1;
   border-right: 2px solid #f5f0e1;
+
 }
-input:not(:placeholder-shown) ~ span.spanAnimlabel,textarea:not(:placeholder-shown) ~ span.spanAnimlabel{
-  color: #f5f0e1;
-  transform: translateX(10px) translateY(-7px);
-  padding: 0 10px;
-  font-size: 0.65rem;
-  background: #1e3d59;
-  border-left: 2px solid #f5f0e1;
-  border-right: 2px solid #f5f0e1;
-}
-/* .testInput{  
-  color: #f5f0e1;
-  transform: translateX(10px) translateY(-7px);
-  padding: 0 10px;
-  font-size: 0.65rem;
-  background: #1e3d59;
-  border-left: 2px solid #f5f0e1;
-  border-right: 2px solid #f5f0e1;
-} */
+
+
 .inputBox input:valid,
 .inputBox input:focus,
 .inputBox textarea:valid,
 .inputBox textarea:focus {
-  border: 2px solid #ff6e40;
+  border: 2px solid #f5f0e1;
 }
 /* .inputBox span {
   position: absolute;
@@ -760,6 +785,7 @@ input:not(:placeholder-shown) ~ span.spanAnimlabel,textarea:not(:placeholder-sho
   flex-direction: row;
   justify-content: space-evenly;
 }
+
 /* SWAL/SweetAlert.js */
 .swal2-shown {
   overflow: unset !important;
@@ -771,12 +797,14 @@ input:not(:placeholder-shown) ~ span.spanAnimlabel,textarea:not(:placeholder-sho
   flex-direction: row;
   background: #1e3d59;
   color: #f5f0e1;
-}
-.contentJob {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.contentJob {
+/*   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
   padding: 50px;
   transition: all 0.2s ease-in-out;
 }
@@ -787,21 +815,17 @@ input:not(:placeholder-shown) ~ span.spanAnimlabel,textarea:not(:placeholder-sho
 .myJob {
   font-weight: bolder;
 }
-.logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 10001;
-}
+
 /* POT POURRI MEDIA QUERIES */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .myJob {
     font-size: 1.5rem;
   }
-  header {
-    width: 50%;
+  .logo img {
+    max-width:70%;
   }
+ 
   header nav a {
     margin: 1rem 0;
     font-size: 2rem;
@@ -810,11 +834,26 @@ input:not(:placeholder-shown) ~ span.spanAnimlabel,textarea:not(:placeholder-sho
   #menu-bars {
     font-size: 1.2rem;
     padding: 0.5rem 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
+  .inputBoxDuoRow {
+    flex-direction: column;
+  }
+  .sectionContact {
+   
+    grid-template-rows: 600px 1200px;
+
+  }
+  .inputBox {
+   
+    width:90%;
+  }
+ 
+   
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 601px) {
+
   .iconMenu {
     display: none;
   }
@@ -824,10 +863,11 @@ input:not(:placeholder-shown) ~ span.spanAnimlabel,textarea:not(:placeholder-sho
   .myJob {
     font-size: 2rem;
   }
- /*  .navbar{
-    align-items: flex-start;
-
-  } */
+  #buttonForm{
+    position:absolute;
+    top:75%;
+    left:15%;
+  }
  
 }
 /* Medium devices (landscape tablets, 768px and up) */
@@ -853,9 +893,9 @@ input:not(:placeholder-shown) ~ span.spanAnimlabel,textarea:not(:placeholder-sho
   header.active {
     left: 0%;
   }
-  header nav a {
-    margin: 1rem 0;
-  }
+/*   header nav a {
+    margin: 2rem 0;
+  } */
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {

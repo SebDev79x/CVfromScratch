@@ -37,7 +37,7 @@ const fetchDataFromForm = async (formatedFormData) => {
                 spansAsArray.forEach(function (el, i) {
                     // Change message color
                     const toggleColor = () => {
-                        spansAsArray[i].style.color = message[i] == "Champ correct" ? "green" : "red"
+                        spansAsArray[i].style.color = message[i] == "Champ correct" ? "#f5f0e1" : "#ff6e40"
                     }
                     toggleColor()
                     // Display message in span

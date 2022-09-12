@@ -26,8 +26,7 @@
 </head>
 
 <body>
-    <!-- LOGO -->
-    <?php include 'components/logo.php'; ?>
+ 
     <!-- HEADER -->
     <?php include 'components/header.php'; ?>
     <!-- NAVBAR -->
@@ -61,7 +60,6 @@
     <!--     <script src="assets/js/evaluations.js" type="module"></script>
  -->
     <script src="assets/js/form.js" type="module"></script>
-    <script src="assets/js/input.js" type="module"></script>
 
     <script src="assets/js/fc.js" type="module"></script>
     <script src="assets/js/tree.js" type="module"></script>

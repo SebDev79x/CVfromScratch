@@ -1,13 +1,7 @@
 const textAnim = document.querySelector('.contentJob h2')
 
 new Typewriter(textAnim,{})
-.typeString('<strong>Développeur </strong>')
+.typeString('<strong>Développeur Web</strong>')
 .pauseFor(300)
-.typeString('<strong>Web</strong>')
-.pauseFor(1000)
-.typeString('<strong> / </strong><br/>')
-.pauseFor(300)
-.typeString('<strong>Web </strong>')
-.pauseFor(300)
-.typeString('<strong>Mobile</strong>')
+
 .start()

@@ -1,3 +1,5 @@
+import {addClassToElements} from './functions.js    '
+
 const spansPercent = document.querySelectorAll('.spanPercent')
 const value = document.querySelectorAll('.value')
 const valueAsAnArray = Array.from(value)
@@ -40,3 +42,9 @@ const animInfo = () => {
     })
 }
 animInfo()
+
+let icons = document.querySelectorAll('.supHalfFront i')
+icons.forEach((e,i)=>{
+    icons[i].style.color = "#f5f0e1"
+})
+addClassToElements(icons, 'colored')
