@@ -30,8 +30,8 @@ $icons = ["devicon-html5-plain","devicon-css3-plain-wordmark","devicon-javascrip
         </div>
         <div class="flip-card-back">
             <div class="supHalfBack">
-                <div class="technoName"><?php echo $value; ?></div>
-                <span class="value"><?php echo $values[$key]; ?></span>
+<!--                 <div class="technoName"><?php echo $value; ?></div>
+ -->                <span class="value"><?php echo $values[$key]; ?></span>
             </div>
             <div class="infHalfBack">
             <span class="spanPercent"></span>

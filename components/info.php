@@ -23,9 +23,7 @@
     <article class="articleInfo item item2">
         <div class="item2Sup itemTitle">Qui suis-je ?</div>
         <div class="item2Inf itemContent">
-            <p class="firstSentence">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates nobis odit
-                amet totam? Est sed atque magni commodi nisi asperiores consequatur consectetur deserunt? Accusantium,
-                tenetur debitis? Dicta veritatis corrupti optio!</p>
+            <p class="firstSentence">Esprit d'équipe, autonome</p>
         </div>
     </article>
     <article class="articleInfo item item3">
@@ -51,18 +49,14 @@
         </div>
     </article>
     <article class="articleInfo item item5">
-        <div class="item5Sup itemTitle">DIVERS</div>
+        <div class="item5Sup itemTitle">Projet</div>
         <div class="item5Inf itemContent">
-            <p class="firstSentence">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam esse a atque at
-                qui, praesentium odio dolor rem porro eaque aspernatur, cum voluptate error amet dolore, natus sapiente
-                velit perspiciatis!
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam esse a atque at qui, praesentium odio
-                dolor rem porro eaque aspernatur, cum voluptate error amet dolore, natus sapiente velit perspiciatis!
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam esse a atque at qui, praesentium odio
-                dolor rem porro eaque aspernatur, cum voluptate error amet dolore, natus sapiente velit perspiciatis!
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam esse a atque at qui, praesentium odio
-                dolor rem porro eaque aspernatur, cum voluptate error amet dolore, natus sapiente velit perspiciatis!
-            </p>
+        <p class="firstSentence">43 ans, célibataire sans enfant, je suis à la recherche d'opportunités
+                professionnelles, idéalement
+                en CDI.</br>
+                Chargé de clientèle pendant 5 ans à Paris jusqu'en 2012, je demeure ouvert à l'idée d'y travailler
+                de nouveau si salaire attrayant et possibilité de télétravail, à moins de 25mn à pied de la Gare du
+                Nord.</p>
         </div>
     </article>
 </section>

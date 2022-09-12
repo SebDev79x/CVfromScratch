@@ -12,8 +12,7 @@
       let percent = st / (sh - h.clientHeight) * 100;
       let roundedPercent = Math.round(percent);
       lineScrollInner.style.width = roundedPercent + '%';
-      lineScrollInner.style.backgroundColor = '#F9BF48';
-      lineScrollInner.style.color = 'black';
+      lineScrollInner.style.backgroundColor = '#ff6e40';
       lineScrollInner.style.height = '5px';
     })
   })
