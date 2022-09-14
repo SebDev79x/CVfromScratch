@@ -7,7 +7,7 @@ import { removeClassFromElements } from './functions.js'
 import { applyNewHeight } from './functions.js' 
 import { removeNewHeight } from './functions.js'
  */
-let lineChrono = document.getElementById('lineChrono')
+/* let lineChrono = document.getElementById('lineChrono')
 let btnChrono = document.getElementById('btnChrono')
 let boolState = false
 let arrayElements = document.querySelectorAll('.date')
@@ -36,7 +36,7 @@ btnChrono.addEventListener('click', function () {
         btnChrono.disabled = false
       }, 3500);
     return !boolState ? start() : end()
-})
+}) */
 
 /* firstDate.style.left = lineChrono.width/6
  */

@@ -1,52 +1,53 @@
-<form method="POST" action="#" id="form">
-    <div class="inputBoxDuoRow">
-        <div class="inputBox">
-            <label for="firstName"></label>
-            <input type="text" name="firstName" id="firstName" placeholder=" ">
-            <span class="spanAnimlabel">Prénom</span>
-            <span class="spanForm firstName"></span>
+    <form method="POST" action="#" id="form">
+        <div class="wrapperRow">
+            <div class="rows">
+                <div class="inputBox">
+                    <label for="firstName"></label>
+                    <input type="text" name="firstName" id="firstName" placeholder=" " />
+                    <span class="spanAnimlabel">Prénom</span>
+                        <p class="spanForm firstName"></p>
+                </div>
+                <div class="inputBox">
+                    <label for="lastName"></label>
+                    <input type="text" name="lastName" id="lastName" placeholder=" " />
+                    <span class="spanAnimlabel">Nom</span>
+                    <p class="spanForm lastName"></p>
+                </div>
+            </div>
         </div>
-        <div class="inputBox">
-            <label for="lastName"></label>
-
-            <input type="text" name="lastName" id="lastName" placeholder=" ">
-            <span class="spanAnimlabel">Nom</span>
-            <span class="spanForm lastName"></span>
+        <div class="wrapperRow">
+            <div class="rows">
+                <div class="inputBox">
+                    <label for="email"></label>
+                    <input type="text" name="email" id="email" placeholder=" " />
+                    <span class="spanAnimlabel">Email</span>
+                    <p class="spanForm email"></p>
+                </div>
+                <div class="inputBox">
+                    <label for="phone"></label>
+                    <input type="text" name="phone" id="phone" placeholder=" " />
+                    <span class="spanAnimlabel">Téléphone</span>
+                    <p class="spanForm phone"></p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="inputBoxDuoRow">
-        <div class="inputBox">
-            <label for="email"></label>
-            <input type="email" name="email" id="email" placeholder=" ">
-            <span class="spanAnimlabel">Email</span>
-            <span class="spanForm email"></span>
+            <div class="wrapperRow">
+                <div class="inputBox">
+                    <label for="subject"></label>
+                    <input type="text" name="subject" id="subject" placeholder=" " />
+                    <span class="spanAnimlabel">Sujet</span>  
+                </div>
+                    <p class="spanForm subject"></p>
+            </div>
+        <div class="wrapperRow">
+            <div class="inputBox">
+                <label for="messageContact"></label>
+                <textarea name="messageContact" id="messageContact" placeholder=" " rows="2" cols="35"></textarea>
+                <span class="spanAnimlabel">Message</span>
+                    <p class="spanForm messageContact"></p>
+            </div>
         </div>
-        <div class="inputBox">
-            <label for="phone"></label>
-            <input type="tel" name="phone" id="phone" placeholder=" ">
-            <span class="spanAnimlabel">Téléphone</span>
-            <span class="spanForm phone"></span>
+        <div class="buttonContainer" style="display: flex; justify-content: center;">
+            <button type="submit" style="padding: 5px 3px;" class="btn buttonForm" id="buttonForm">Envoyer ?</button>
         </div>
-
-    </div>
-    <div class="inputBoxDuoRow">
-        <div class="inputBox">
-            <label for="subject"></label>
-            <input type="text" name="subject" id="subject" placeholder=" ">
-            <span class="spanAnimlabel">Sujet</span>
-            <span class="spanForm subject"></span>
-
-        </div>
-
-        <div class="inputBox">
-            <label for="messageContact"></label>
-            <textarea name="messageContact" id="messageContact" cols="20" rows="10" placeholder=" "></textarea>
-            <span class="spanAnimlabel">Message</span>
-            <span class="spanForm messageContact"></span>
-        </div>
-
-    </div>
-    <div class="buttonContainer item6">
-        <input type="submit" class="btn btnSubmit" id="buttonForm" value="Valider le formulaire ?">
-    </div>
-</form>
+    </form>

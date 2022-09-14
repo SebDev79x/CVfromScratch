@@ -12,7 +12,7 @@ $regexName = '/^([A-Za-zàáâäãåąčćęèéêëėįìíîïłńòóôöõø
 
 if (empty($_POST['myData']['firstName'])) {
     // Si soumission form et input vide
-    $message['firstName'] = 'Ce champ demeure désespérément vide :(';
+    $message['firstName'] = 'Ce champ est vide.';
 } else if (!preg_match($regexName, $_POST['myData']['firstName'])) {
     // Si soumission form et saisie non conforme
     $message['firstName'] = 'La saisie semble invalide...';
@@ -23,7 +23,7 @@ if (empty($_POST['myData']['firstName'])) {
 
 if (empty($_POST['myData']['lastName'])) {
     // Si soumission form et input vide
-    $message['lastName'] = 'Ce champ demeure désespérément vide :(';
+    $message['lastName'] = 'Ce champ est vide.';
 } else if (!preg_match($regexName, $_POST['myData']['lastName'])) {
     // Si soumission form et saisie non conforme
     $message['lastName'] = 'La saisie semble invalide...';
@@ -34,7 +34,7 @@ if (empty($_POST['myData']['lastName'])) {
 
 if (empty($_POST['myData']['email'])) {
     // Si soumission form et input vide
-    $message['email'] = 'Ce champ demeure désespérément vide :(';
+    $message['email'] = 'Ce champ est vide.';
 } else if (!filter_var($_POST['myData']['email'], FILTER_VALIDATE_EMAIL)) {
     // Si soumission form et saisie non conforme
     $message['email'] = 'La saisie semble invalide...';
@@ -45,7 +45,7 @@ if (empty($_POST['myData']['email'])) {
 
 if (empty($_POST['myData']['phone'])) {
     // Si soumission form et input vide
-    $message['phone'] = 'Ce champ demeure désespérément vide :(';
+    $message['phone'] = 'Ce champ est vide.';
 } else if (!preg_match($regPhone, $_POST['myData']['phone']) || (preg_match($regPhone2, $_POST['myData']['phone']))) {
     // Si soumission form et saisie non conforme
     $message['phone'] = 'La saisie semble invalide...';
@@ -56,7 +56,7 @@ if (empty($_POST['myData']['phone'])) {
 
 if (empty($_POST['myData']['subject'])) {
     // Si soumission form et input vide
-    $message['subject'] = 'Ce champ demeure désespérément vide :(';
+    $message['subject'] = 'Ce champ est vide.';
 } else if (!preg_match($regexName, $_POST['myData']['subject'])) {
     // Si soumission form et saisie non conforme
     $message['subject'] = 'La saisie semble invalide...';
@@ -67,7 +67,7 @@ if (empty($_POST['myData']['subject'])) {
 
 if (empty($_POST['myData']['messageContact'])) {
     // Si soumission form et input vide
-    $message['messageContact'] = 'Ce champ demeure désespérément vide :(';
+    $message['messageContact'] = 'Ce champ est vide.';
 } else if (!preg_match($regexName, $_POST['myData']['messageContact'])) {
     // Si soumission form et saisie non conforme
     $message['messageContact'] = 'La saisie semble invalide...';

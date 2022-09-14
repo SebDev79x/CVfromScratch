@@ -1,4 +1,4 @@
-<?php 
+<!-- <?php 
 $spanDates = []
 ?>
 
@@ -25,4 +25,4 @@ $spanDates = []
     <div>
         <button id="btnChrono" type="button" class="btn btn-outline-warning">Warning</button>
     </div>
-</section>
+</section> -->

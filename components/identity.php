@@ -1,5 +1,5 @@
 <section class="sectionIdentity" id="home">
     <div class="contentJob">
-        <h2 class="myJob"></h2>
+        <h1 class="myJob"></h1>
     </div>
 </section>

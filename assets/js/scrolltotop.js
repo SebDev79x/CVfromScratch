@@ -1,5 +1,5 @@
 // Création variable btnToScrollToTop à partir de l'ID buttonToScrollToTop
-let btnToScrollToTop = document.getElementById('buttonToScrollToTop');
+let btnToScrollToTop = document.getElementById('buttonTop');
 
 // 
 /* btnToScrollToTop.style.display = 'block'

@@ -37,12 +37,12 @@
     <?php include 'components/identity.php'; ?>
     <!-- INFO -->
     <?php include 'components/info.php'; ?>
-    <!-- CONTACT -->
-    <?php include 'components/contact.php'; ?>
     <!-- FLIPCARDS -->
     <?php include 'components/flipcardscontainer.php'; ?>
+    <!-- CONTACT -->
+    <?php include 'components/contact.php'; ?>
     <!-- CHRONO -->
-    <?php include 'components/chrono.php'; ?>
+    
     <!-- BUTTON TO TOP -->
     <?php include 'components/buttontotop.php'; ?>
     <!-- FOOTER -->
@@ -63,8 +63,8 @@
 
     <script src="assets/js/fc.js" type="module"></script>
     <script src="assets/js/tree.js" type="module"></script>
-    <script src="assets/js/chrono.js" type="module"></script>
-    <script src="assets/js/functions.js" type="module"></script>
+<!--     <script src="assets/js/chrono.js" type="module"></script>
+ -->    <script src="assets/js/functions.js" type="module"></script>
     <script src="assets/js/header.js" type="module"></script>
     <script src="assets/js/typewriter.js" type="module"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
