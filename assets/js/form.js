@@ -1,4 +1,4 @@
-// Display error or success message in form
+// Display error or success message in p (not span) form
 const spanForm = document.querySelectorAll('.spanForm')
 // Convert Nodelist in array
 const spansAsArray = Array.from(spanForm)
@@ -49,48 +49,65 @@ const sendEmail = (data) => {
     )
 }
 
-// FUNCTION SWAL1 + sendEmail + SWAL2
+// FUNCTION SWAL1 POP UP CONFIRMATION / ANNULATION SOUMISSION FORM
 const fireSwal1 = (stateX, userData) => {
     Swal.fire({
-        title: 'Formulaire valide',
+        title: 'Tout est valide',
         text: 'Confirmer l\'envoi ?',
         icon: 'info',
         confirmButtonText: 'Bien sûr !',
         cancelButtonText: "Annuler",
+        confirmButtonColor: '#1e3d59',
+        cancelButtonColor: '#ff6e40',
         showCancelButton: true,
         heightAuto: true,
     })
         .then((action) => {
+            // CONFIRMATION SOUMISSION FORM
             if (action.isConfirmed) {
                 stateX = true
+                console.log("stateX devient true", stateX);
                 if (stateX) {
+                    // ENVOI MAIL
                     sendEmail(userData)
+                    console.log("On envoie le mail");
+                    // POP UP INFORMATION ENVOI MAIL 
+                    fireSwal2()
                 }
+                // ANNULATION SOUMISSION FORM
+            } else if (action.dismiss === Swal.DismissReason.cancel) {
+                Swal.fire( {
+                    title: 'Envoi annulé',
+        icon: 'error',
+        confirmButtonText: 'Ok',
+        confirmButtonColor: '#1e3d59',
+         }
+                )
             }
-        })
-        .then(() => {
-            fireSwal2()
         })
 }
 
+// FUNCTION SWAL2 CONFIRMATION ENVOI MAIL
 const fireSwal2 = () => {
     setTimeout(() => {
         Swal.fire({
-            title: 'Message envoyé ! Merci !',
+            title: 'Mail envoyé ! Merci !',
             text: 'Je vous répondrai dès que possible :)',
+            confirmButtonColor: '#1e3d59',
+            confirmButtonText: 'Ok',
             icon: 'success',
         })
-        .then((action) => {
-            hideSpansIfFormOk(spansAsArray)
-            if (action.isConfirmed) {
-                submitForm()
-            }
-        })
+            .then((action) => {
+                hideSpansIfFormOk(spansAsArray)
+                if (action.isConfirmed) {
+                    submitForm()
+                }
+            })
     }, 3000)
 }
 
 
-// Fetch data from form
+// FUNCTION Fetch data from validForm
 const fetchDataFromForm = async (formatedFormData) => {
     try {
         await fetch('components/validForm.php', {
@@ -112,7 +129,7 @@ const fetchDataFromForm = async (formatedFormData) => {
                         spansAsArray[i].style.color = message[i] == "Champ correct" ? "yellow" : "#ff6e40"
                     }
                     toggleColor()
-                    // Display message in span
+                    // Display message in p
                     spansAsArray[i].innerHTML = message[i]
                 })
                 // Check if every element in message == "Champ correct" => form is reset or not
@@ -125,6 +142,8 @@ const fetchDataFromForm = async (formatedFormData) => {
         console.log(err, "erreur du try catch");
     }
 }
+
+// Listen to form submit
 formX.addEventListener('submit', function (event) {
     event.preventDefault()
     const formatedFormData = new FormData(formX)

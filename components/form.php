@@ -1,4 +1,4 @@
-    <form method="POST" action="#" id="form">
+    <form method="POST" id="form">
         <div class="wrapperRow">
             <div class="rows">
                 <div class="inputBox">
