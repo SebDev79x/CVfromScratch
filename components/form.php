@@ -47,7 +47,7 @@
                     <p class="spanForm messageContact"></p>
             </div>
         </div>
-        <div class="buttonContainer" style="display: flex; justify-content: center;">
-            <button type="submit" style="padding: 5px 3px;" class="btn buttonForm" id="buttonForm">Envoyer ?</button>
+        <div class="buttonContainer">
+            <button type="submit" class="btn buttonForm" id="buttonForm">Envoyer ?</button>
         </div>
     </form>

@@ -56,12 +56,7 @@ header {
   justify-content: flex-start;
   flex: 4;
 }
-img {
-  transition: transform 1s ease-in-out;
-}
-img:hover {
-  transform: scale(1.1);
-}
+
 header nav a span {
   cursor: pointer;
 }
@@ -364,8 +359,8 @@ iframe {
 
 .flip-card {
   background: transparent;
-  width: 160px;
-  height: 160px;
+  width: 16rem;
+  height: 16rem;
 }
 
 /* Container pour positionner front et back sides */
@@ -415,7 +410,7 @@ iframe {
   height: 20%;
 }
 .supHalfFront > i {
-  font-size: 4rem;
+  font-size: 8rem;
 }
 
 .infHalfFront,
@@ -561,6 +556,7 @@ iframe {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  height: 12rem;
 }
 
 .socialIconsFooter a i {
@@ -582,37 +578,40 @@ iframe {
   background: #1e3d59;
   border-radius: 1.5rem;
 }
-.wrapperForm{
-	display: flex; 
-	justify-content: center; 
-	align-items: center;
+.wrapperForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.wrapperRow{
-	margin-top: 3rem;
+.wrapperRow {
+  margin-top: 3rem;
 }
-.rows{
-	display: flex; 
-	flex-direction: row;
+.rows {
+  display: flex;
+  flex-direction: row;
 }
 .buttonForm {
-	background: #1e3d59;
-	color: #f5f0e1;
+  background: #1e3d59;
+  color: #f5f0e1;
   font-size: 1.6rem;
   cursor: pointer;
-  margin:3rem;
+  margin: 3rem;
   border-radius: 1.5rem;
   border: 2px solid #f5f0e1;
-
+  padding: 1rem;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: center;
 }
 
 .buttonForm:hover,
 .buttonForm:active,
 .buttonForm:focus,
 .buttonForm.active {
-	color: #ff6e40;
-	background: #f5f0e1;
-	  font-weight: bold;
-
+  color: #ff6e40;
+  background: #f5f0e1;
+  font-weight: bold;
 }
 
 .fade {
@@ -648,14 +647,14 @@ iframe {
   font-size: 1.6rem;
   color: #ff6e40;
   text-align: center;
-position: absolute;
-margin-left: 2rem;
+  position: absolute;
+  margin-left: 2rem;
 }
 
 .inputBox input:focus ~ span.spanAnimlabel,
 .inputBox textarea:focus ~ span.spanAnimlabel,
- input:not(:placeholder-shown) ~ span.spanAnimlabel,
- textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
+input:not(:placeholder-shown) ~ span.spanAnimlabel,
+textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
   color: #f5f0e1;
   transform: translateX(1rem) translateY(-0.7rem);
   padding: 0 1rem;
@@ -679,11 +678,18 @@ margin-left: 2rem;
   align-items: center;
 }
 
-
 /* SWAL/SweetAlert.js */
+
 .swal2-shown {
   overflow: unset !important;
   padding-right: 0 !important;
+}
+.swal2-container.swal2-center>.swal2-popup{
+  border-radius: 1.5rem;
+  background-color: #f5f0e1  !important;
+}
+.swal2-html-container, .swal2-title{
+  color: #1e3d59 !important;
 }
 /* IDENTITY */
 .sectionIdentity {
@@ -714,35 +720,34 @@ margin-left: 2rem;
 /* POT POURRI MEDIA QUERIES */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 576px) {
-	html{
-		font-size: 56%;
-	}
-	.wrapperRow{
-		margin-top: 0;
-	}
-	.inputBox{
-		margin-top: 3.5rem;
-	}
-	.rows{
-		display: flex; 
-		flex-direction: column;
-	}
+  html {
+    font-size: 56%;
+  }
+  .wrapperRow {
+    margin-top: 0;
+  }
+  .inputBox {
+    margin-top: 3.5rem;
+  }
+  .rows {
+    display: flex;
+    flex-direction: column;
+  }
   .logo img {
     max-width: 70%;
     height: auto;
   }
 
   header nav a {
-    margin: 1rem 0;
+    margin: 3rem 0;
     font-size: 3rem;
   }
 
-  
   #footer {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 25rem;
+    height: 20rem;
   }
   .socialIconsFooter {
     margin: 1rem;
@@ -772,14 +777,18 @@ margin-left: 2rem;
       'item4 item4';
   }
   .myJob {
-	font-size: 3rem;
-	font-weight: bolder;
+    font-size: 3rem;
+    font-weight: bolder;
+  }
+  .flip-card {
+    background: transparent;
+    width: 12rem;
+    height: 12rem;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 577px) {
-	
   .sectionInfo {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: minmax(25rem, 1fr) minmax(25rem, 1fr);
@@ -811,9 +820,8 @@ margin-left: 2rem;
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .myJob {
-    /*     font-size: 3rem;
- */
+  .swal2-popup {
+    font-size: 1.3rem !important;
   }
 }
 /* Large devices (less than ) */
@@ -848,10 +856,12 @@ margin-left: 2rem;
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .swal2-popup {
+    font-size: 1.6rem !important;
+  }
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1280px) {
-
   .itemTitle {
     /*     font-size: 1.5rem;
  */
@@ -887,7 +897,6 @@ margin-left: 2rem;
   }
 }
 @media only screen and (max-width: 1366px) {
-
 }
 
 @media only screen and (min-width: 1367px) {

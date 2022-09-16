@@ -3,7 +3,7 @@
 
 <header>
 <div class="logo" id="logo"> 
-    <img src="assets/img/logo14.png" width="180px" height="180px" alt="">
+    <img src="assets/img/logo14.png" width="180px" height="180px" alt="logo coucher de soleil">
     </div>
     <nav class="navbar">
         <a id="homeLink" class="scrollTo"  alt="accueil"><span class="textMenu">Accueil</span><span class="iconMenu"><i class="fas fa-home"></i></span></a>

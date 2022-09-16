@@ -26,7 +26,7 @@
 </head>
 
 <body>
- 
+
     <!-- HEADER -->
     <?php include 'components/header.php'; ?>
     <!-- NAVBAR -->
@@ -42,7 +42,7 @@
     <!-- CONTACT -->
     <?php include 'components/contact.php'; ?>
     <!-- CHRONO -->
-    
+
     <!-- BUTTON TO TOP -->
     <?php include 'components/buttontotop.php'; ?>
     <!-- FOOTER -->
@@ -56,22 +56,17 @@
     <script src="assets/js/scrolltotop.js"></script>
     <script src="assets/js/scrollline.js"></script>
     <script src="assets/js/anchors.js"></script>
-
-    <!--     <script src="assets/js/evaluations.js" type="module"></script>
- -->
     <script src="assets/js/form.js" type="module"></script>
-
     <script src="assets/js/fc.js" type="module"></script>
     <script src="assets/js/tree.js" type="module"></script>
-<!--     <script src="assets/js/chrono.js" type="module"></script>
- -->    <script src="assets/js/functions.js" type="module"></script>
+    <script src="assets/js/functions.js" type="module"></script>
     <script src="assets/js/header.js" type="module"></script>
     <script src="assets/js/typewriter.js" type="module"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </body>
 
-</html>
+</html> 

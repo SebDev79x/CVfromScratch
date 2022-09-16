@@ -1,22 +1,94 @@
+// Display error or success message in form
 const spanForm = document.querySelectorAll('.spanForm')
+// Convert Nodelist in array
 const spansAsArray = Array.from(spanForm)
-console.log("spansAsArray",spansAsArray);
-// Check if message == "Champ correct" => boolean
+// Get form element
+const formX = document.getElementById('form')
+
+// FUNCTION Check if message == "Champ correct" => boolean
 const checkString = (string) => {
     return string == "Champ correct"
 }
+
+// FUNCTION Submit form
 const submitForm = async () => {
     const go = await formX.submit()
     return go
 }
-// Toggle classes to hide messages if form is ok after submit
+
+// FUNCTION Toggle classes to hide messages if form is ok after submit
 const hideSpansIfFormOk = (array) => {
     return array.map((e, i) => {
         e.classList.toggle('fade')
     })
 }
-// Get form
-const formX = document.getElementById('form')
+
+// States
+let isFormOk = false
+let stateX = false
+
+// FUNCTION Send an email
+const sendEmail = (data) => {
+    console.log("sendMaildata", data);
+    Email.send({
+        Host: "smtp.elasticemail.com",
+        Username: "professeurchaos79@gmail.com",
+        Password: "2729EC0632D54AE592B17EDC36BF992EEC1D",
+        To: 'professeurchaos79@gmail.com',
+        From: 'professeurchaos79@gmail.com',
+        Subject: `${data.subject}`,
+        Body: `Prénom : ${data.firstName} </br>
+        Nom : ${data.lastName} </br>
+        Téléphone : ${data.email} </br>
+        Téléphone : ${data.phone} </br>
+        Sujet : ${data.subject} </br>
+        Message : ${data.messageContact}`
+
+    }).then(
+        message => console.log("Tout est ok a priori", message)
+    )
+}
+
+// FUNCTION SWAL1 + sendEmail + SWAL2
+const fireSwal1 = (stateX, userData) => {
+    Swal.fire({
+        title: 'Formulaire valide',
+        text: 'Confirmer l\'envoi ?',
+        icon: 'info',
+        confirmButtonText: 'Bien sûr !',
+        cancelButtonText: "Annuler",
+        showCancelButton: true,
+        heightAuto: true,
+    })
+        .then((action) => {
+            if (action.isConfirmed) {
+                stateX = true
+                if (stateX) {
+                    sendEmail(userData)
+                }
+            }
+        })
+        .then(() => {
+            fireSwal2()
+        })
+}
+
+const fireSwal2 = () => {
+    setTimeout(() => {
+        Swal.fire({
+            title: 'Message envoyé ! Merci !',
+            text: 'Je vous répondrai dès que possible :)',
+            icon: 'success',
+        })
+        .then((action) => {
+            hideSpansIfFormOk(spansAsArray)
+            if (action.isConfirmed) {
+                submitForm()
+            }
+        })
+    }, 3000)
+}
+
 
 // Fetch data from form
 const fetchDataFromForm = async (formatedFormData) => {
@@ -33,92 +105,25 @@ const fetchDataFromForm = async (formatedFormData) => {
                 data = JSON.parse(data)
                 // https://softauthor.com/javascript-htmlcollection-vs-nodelist/
                 const message = Object.values(data.message)
-                console.log("MESSAGE LISTE",message);
+                const userInfo = data.myData
                 spansAsArray.forEach(function (el, i) {
                     // Change message color
                     const toggleColor = () => {
-                        spansAsArray[i].style.color = message[i] == "Champ correct" ? "#f5f0e1" : "#ff6e40"
+                        spansAsArray[i].style.color = message[i] == "Champ correct" ? "yellow" : "#ff6e40"
                     }
                     toggleColor()
                     // Display message in span
                     spansAsArray[i].innerHTML = message[i]
-                    // SWAL => badass modal
-                    /* const fireSwalFormOk = () => {
-                        Swal.fire({
-                            title: 'Alors !??',
-                            text: 'Confirmer la soumission ?',
-                            icon: 'warning',
-                            confirmButtonText: 'Entendu',
-                            showCancelButton: true
-                        }).then((action) => {
-                            if (action.isConfirmed) {
-                                console.log("response swal");
-                               console.log("message",message);
-
-                                setTimeout(() => {
-                                   
-
-                                    Swal.fire({
-                                        title: 'Super !',
-                                        text: 'Message envoyé ! Merci !',
-                                        icon: 'success'
-                                    })
-                                    hideSpansIfFormOk(spansAsArray)
-                                    formX.reset()
-                                    formX.submit()
-                                }, 5000)
-
-
-                            }
-                        })
-                    } */
-                    let stateX = false
-                /*     const fireSwalFormOk = () => {
-                        console.log("response swal");
-                        Swal.fire({
-                            title: 'Alors !??',
-                            text: 'Confirmer la soumission ?',
-                            icon: 'warning',
-                            confirmButtonText: 'Entendu',
-                            showCancelButton: true,
-                            heightAuto: true,
-                            
-                        }).then((action) => {
-
-                            if (action.isConfirmed) {
-                                stateX = true
-                            }
-                        })
-                    } */
-             /*        const fireSwalFormOk2 = (() => {
-                        console.log("response swal222222");
-                        console.log("message", message);
-                        setTimeout(() => {
-                            if (stateX == true) {
-                                Swal.fire({
-                                    title: 'Super !',
-                                    text: 'Message envoyé ! Merci !',
-                                    icon: 'success',
-                                    
-                                }).then((action) => {
-                                        hideSpansIfFormOk(spansAsArray)
-                                        stateX = false
-                                        if (action.isConfirmed) {
-                                            submitForm()
-                                        }
-                                    })
-                    }
-                        }, 3000)
-            }) */
-        // Check if every element in message == "Champ correct" => form is reset or not
-        message.every(checkString) ? console.log("TOUT EST OK") : console.log("RIEN N'EST BON") 
-/*         fireSwalFormOk2()
- */    })
-})
-            .catch ((err) => console.log("err", err))
+                })
+                // Check if every element in message == "Champ correct" => form is reset or not
+                message.every(checkString) ? isFormOk = true : isFormOk = false
+                // Triggers fireSwal1 if isFormOk = true
+                isFormOk ? fireSwal1(stateX, userInfo) : console.log('NONONONONO')
+            })
+            .catch((err) => console.log("err", err))
     } catch (err) {
-    console.log(err, "erreur du try catch");
-}
+        console.log(err, "erreur du try catch");
+    }
 }
 formX.addEventListener('submit', function (event) {
     event.preventDefault()
