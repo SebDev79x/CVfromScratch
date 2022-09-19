@@ -42,7 +42,7 @@
         <div class="wrapperRow">
             <div class="inputBox">
                 <label for="messageContact"></label>
-                <textarea name="messageContact" id="messageContact" placeholder=" " rows="2" cols="35"></textarea>
+                <textarea name="messageContact" id="messageContact" placeholder=" " ></textarea>
                 <span class="spanAnimlabel">Message</span>
                     <p class="spanForm messageContact"></p>
             </div>

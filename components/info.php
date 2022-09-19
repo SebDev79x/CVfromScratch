@@ -7,22 +7,21 @@
             <p class="firstSentence">Mon projet de reconversion professionnelle dans le
                 développement a été lancé après un bilan de compétences.</br>
                 J'ai obtenu le titre de Développeur Web & Web Mobile en 2020 puis j'ai poursuivi mon apprentissage
-                en autodidacte.</br>
-                Ayant une forte appétence pour JavaScript et la volonté d'en apprendre davantage, j'ai suivi la
-                formation React Native, achevée fin juillet 2022.</p>
+                en autodidacte, codant jour après jour.</br>
+                J'ai également suivi une formation React Native, achevée fin juillet 2022.</p>
         </div>
     </article>
     <article class="articleInfo item item2">
         <div class="item2Sup itemTitle">
-            <h2>Personnalité</h2>
+            <h2>Savoir-être</h2>
         </div>
         <div class="item2Inf itemContent">
             <p class="firstSentence">
                 <ul>
                     <li>Esprit d'équipe,</li>
                     <li>Autonome,</li>
-                    <li>Esprit d'équipe,</li>
-                    <li>Autonome,</li>
+                    <li>Discipliné,</li>
+                    <li>Tenace,</li>
                 </ul> </p>
         </div>
     </article>

@@ -3,40 +3,34 @@ import { removeClass } from './functions.js'
 import { addClassToElements } from './functions.js'
 import { removeClassFromElements } from './functions.js'
 
-/*
-import { applyNewHeight } from './functions.js' 
-import { removeNewHeight } from './functions.js'
- */
-/* let lineChrono = document.getElementById('lineChrono')
+
+let lineChrono = document.getElementById('lineChrono')
 let btnChrono = document.getElementById('btnChrono')
 let boolState = false
 let arrayElements = document.querySelectorAll('.date')
-
+let arrayElements2 = document.querySelectorAll('.date ul')
+let datesAndLineContainer = document.getElementById('datesAndLineContainer')
 const start = () => {
-    console.log("start anim et firstDate", firstDate);
-    addClass(lineChrono, 'transformLineChrono')
     addClassToElements(arrayElements, 'transformDates')
-    addClassToElements(arrayElements, 'opacityDates')
-
+    addClassToElements(arrayElements2, 'transformDates')
     boolState = true
 }
 
 const end = () => {
     console.log("end anim");
-    removeClass(lineChrono, 'transformLineChrono')
     removeClassFromElements(arrayElements, 'transformDates')
-    removeClassFromElements(arrayElements, 'opacityDates')
+    removeClassFromElements(arrayElements2, 'transformDates')
 
     boolState = false
 }
 
-btnChrono.addEventListener('click', function () {
-    btnChrono.disabled = true;
+datesAndLineContainer.addEventListener('mouseenter', function () {
+   /*  btnChrono.disabled = true;
     setTimeout(function(){
         btnChrono.disabled = false
-      }, 3500);
+      }, 3500); */
     return !boolState ? start() : end()
-}) */
+})
 
 /* firstDate.style.left = lineChrono.width/6
  */

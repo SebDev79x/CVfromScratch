@@ -10,12 +10,6 @@ const checkString = (string) => {
     return string == "Champ correct"
 }
 
-// FUNCTION Submit form
-const submitForm = async () => {
-    const go = await formX.submit()
-    return go
-}
-
 // FUNCTION Toggle classes to hide messages if form is ok after submit
 const hideSpansIfFormOk = (array) => {
     return array.map((e, i) => {
@@ -76,12 +70,12 @@ const fireSwal1 = (stateX, userData) => {
                 }
                 // ANNULATION SOUMISSION FORM
             } else if (action.dismiss === Swal.DismissReason.cancel) {
-                Swal.fire( {
+                Swal.fire({
                     title: 'Envoi annulé',
-        icon: 'error',
-        confirmButtonText: 'Ok',
-        confirmButtonColor: '#1e3d59',
-         }
+                    icon: 'error',
+                    confirmButtonText: 'Ok',
+                    confirmButtonColor: '#1e3d59',
+                }
                 )
             }
         })
@@ -99,9 +93,8 @@ const fireSwal2 = () => {
         })
             .then((action) => {
                 hideSpansIfFormOk(spansAsArray)
-                if (action.isConfirmed) {
-                    submitForm()
-                }
+                formX.reset()
+               
             })
     }, 3000)
 }
@@ -126,16 +119,16 @@ const fetchDataFromForm = async (formatedFormData) => {
                 spansAsArray.forEach(function (el, i) {
                     // Change message color
                     const toggleColor = () => {
-                        spansAsArray[i].style.color = message[i] == "Champ correct" ? "yellow" : "#ff6e40"
+                        spansAsArray[i].style.color = message[i] == "Champ correct" ? "#f5f0e1" : "#ffc13b"
                     }
                     toggleColor()
                     // Display message in p
                     spansAsArray[i].innerHTML = message[i]
                 })
                 // Check if every element in message == "Champ correct" => form is reset or not
-                message.every(checkString) ? isFormOk = true : isFormOk = false
+                message.every(checkString) ? isFormOk = true : isFormOk
                 // Triggers fireSwal1 if isFormOk = true
-                isFormOk ? fireSwal1(stateX, userInfo) : console.log('NONONONONO')
+                isFormOk == true ? fireSwal1(stateX, userInfo) : false
             })
             .catch((err) => console.log("err", err))
     } catch (err) {

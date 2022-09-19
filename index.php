@@ -33,8 +33,9 @@
     <?php include 'components/validForm.php'; ?>
     <!-- SCROLL LINE -->
     <?php include 'components/scrollline.php'; ?>
+     <!-- BANNER -->
+     <?php include 'components/banner.php'; ?>
     <!-- IDENTITY BLOCK -->
-    <?php include 'components/identity.php'; ?>
     <!-- INFO -->
     <?php include 'components/info.php'; ?>
     <!-- FLIPCARDS -->
@@ -42,6 +43,7 @@
     <!-- CONTACT -->
     <?php include 'components/contact.php'; ?>
     <!-- CHRONO -->
+    <?php include 'components/chrono.php'; ?>
 
     <!-- BUTTON TO TOP -->
     <?php include 'components/buttontotop.php'; ?>
@@ -56,6 +58,8 @@
     <script src="assets/js/scrolltotop.js"></script>
     <script src="assets/js/scrollline.js"></script>
     <script src="assets/js/anchors.js"></script>
+    <script src="assets/js/chrono.js" type="module"></script>
+
     <script src="assets/js/form.js" type="module"></script>
     <script src="assets/js/fc.js" type="module"></script>
     <script src="assets/js/tree.js" type="module"></script>

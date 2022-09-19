@@ -2,6 +2,6 @@
 const textAnim = document.querySelector('.contentJob h1')
 
 new Typewriter(textAnim)
-.typeString('<strong>Développeur Web</strong>')
+.typeString('<span style="color:#f5f0e1";>Développeur Front</span>')
 .pauseFor(300)
 .start()
