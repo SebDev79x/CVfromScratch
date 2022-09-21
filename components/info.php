@@ -16,13 +16,11 @@
             <h2>Savoir-être</h2>
         </div>
         <div class="item2Inf itemContent">
-            
                 <ul>
                     <li>Esprit d'équipe</li>
                     <li>Autonome</li>
                     <li>Discipliné</li>
                     <li>Tenace</li>
-                    <li>Passionné</li>
                 </ul> 
         </div>
     </article>
@@ -32,12 +30,9 @@
         </div>
         <div class="item3Inf itemContent">
             <div class="socialIcons">
-                <p><i class="fa fa-calendar"></i> 10 / 04 /1979</p>
+                <p><i class="fa fa-calendar"></i> 10 avril 1979</p>
                 <p><i class="fa fa-car"></i> Permis B + véhicule</p>
-                <p><i class="fa fa-calendar"></i> 10 / 04 /1979</p>
-                <p><i class="fa fa-car"></i> Permis B + véhicule</p>
-                <p><i class="fa fa-calendar"></i> 10 / 04 /1979</p>
-                <p><i class="fa fa-car"></i> Permis B + véhicule</p>
+             
               
             </div>
         </div>

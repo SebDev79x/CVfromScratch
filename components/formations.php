@@ -1,9 +1,68 @@
-<section class="sectionChrono" id="sectionChrono">
-<div class="diplomasTitle">
+<section class="sectionXP" id="sectionXP">
+
+    <!-- Slider main container -->
+
+<div class="swiperTest">
+    <div class="swiper">
+        <div class="diplomasTitle">
             <h2>Diplômes</h2>
         </div>
-        
-        <div class="diplomas" id="diplomas">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="diploma">
+                    <div>
+                        <h3>BACCALAURÉAT</h3>
+                        <h4>Sciences Eco. & Sociales</h4>
+                    </div>
+                    <p>2003</br>
+                        AFPI Sifor Oise</br>
+                        Compiègne, 60</p>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="diploma">
+                    <div>
+                        <h3>BACCALAURÉAT</h3>
+                        <h4>Sciences Eco. & Sociales</h4>
+                    </div>
+                    <p>2003</br>
+                        AFPI Sifor Oise</br>
+                        Compiègne, 60</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="diploma">
+                    <div>
+                        <h3>BACCALAURÉAT</h3>
+                        <h4>Sciences Eco. & Sociales</h4>
+                    </div>
+                    <p>2003</br>
+                        AFPI Sifor Oise</br>
+                        Compiègne, 60</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="diploma">
+                    <div>
+                        <h3>BACCALAURÉAT</h3>
+                        <h4>Sciences Eco. & Sociales</h4>
+                    </div>
+                    <p>2003</br>
+                        AFPI Sifor Oise</br>
+                        Compiègne, 60</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+    </div>
+</section>
+<!-- <div class="diplomas" id="diplomas">
             <div class="firstDiploma diploma" id="firstDiploma">
                 <h3>BACCALAURÉAT</br>Sciences Eco. & Sociales</h3>
                 <ul>
@@ -39,10 +98,9 @@
                     <li>Compiègne, 60</li>
                 </ul>
             </div>
-        </div>
-        <!--      <div class="lineChrono" id="lineChrono"></div>
+        </div> -->
+<!--      <div class="lineChrono" id="lineChrono"></div>
     </div>
     <div>
         <button id="btnChrono" type="button" class="btn btn-outline-warning">Warning</button>
     </div> -->
-</section>

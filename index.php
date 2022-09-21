@@ -8,8 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
- -->
     <link rel="shortcut icon" href="#">
     <title>CV Sébastien Mazur</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -21,6 +19,7 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://kit.fontawesome.com/c95e83d52d.js" crossorigin="anonymous" defer></script>
 
 </head>
@@ -62,11 +61,14 @@
     <script src="assets/js/functions.js" type="module"></script>
     <script src="assets/js/header.js" type="module"></script>
     <script src="assets/js/typewriter.js" type="module"></script>
+    <script src="assets/js/swiper.js" type="module"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
 </body>
 
 </html> 

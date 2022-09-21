@@ -1,4 +1,4 @@
-import { addClassToNodeList } from './functions.js'
+/* import { addClassToNodeList } from './functions.js'
 import { removeClassFromNodeList } from './functions.js'
 
 let nodelistDiplomas = document.querySelectorAll('.diploma')
@@ -18,16 +18,16 @@ const end = () => {
 }
 
 diplomas.addEventListener('mouseenter',  () =>{
-   /*  btnChrono.disabled = true;
+    btnChrono.disabled = true;
     setTimeout(function(){
         btnChrono.disabled = false
-      }, 3500); */
+      }, 3500);
     start()
 })
 diplomas.addEventListener('mouseleave', () => {
-    /*  btnChrono.disabled = true;
+     btnChrono.disabled = true;
      setTimeout(function(){
          btnChrono.disabled = false
-       }, 3500); */
+       }, 3500);
      end()
- })
+ }) */
