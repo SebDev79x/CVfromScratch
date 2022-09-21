@@ -9,5 +9,4 @@
     </div>
 
     </div>
-    <div class="block block2"></div>
 </section>
