@@ -1,20 +1,19 @@
 <section class="sectionContact" id="contact">
 
     <div class="wrapperContact">
-    <div class="contactTitle">
+        <div class="contactTitle">
             <h2>Coordonnées</h2>
         </div>
         <div class="wrapperContent">
-            <div class="wrapperSocialIcons">
-                <div class="socialIcons">
-                    <p><i class="fas fa-paper-plane"></i> sebastien.mazur@wanadoo.fr</p>
-                    <p><i class="fas fa-phone-square-alt"></i> 06 15 92 38 65</p>
-                </div>
-                <address>
-                    Sébastien Mazur<br>
+            <div class="socialIcons">
+                <i class="fas fa-envelope"></i>
+                <p>sebastien.mazur@wanadoo.fr</p>
+                <i class="fas fa-phone-square-alt"></i>
+                <p>06 15 92 38 65</p>
+                <i class="fas fa-map-marker"></i>
+                                <p>Sébastien Mazur<br>
                     15 rue de la Croix<br>
-                    60640 Quesmy
-                </address>
+                    60640 Quesmy</p>
             </div>
             <div class="googleMaps">
                 <iframe

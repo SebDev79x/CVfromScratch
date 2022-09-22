@@ -256,23 +256,24 @@ iframe {
   border-radius: 1.5rem;
 }
 .wrapperContent {
+  height: 90%;
+}
+.socialIcons{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 90%;
+  align-items: center;
 }
-.wrapperSocialIcons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.socialIcons p i {
+.socialIcons i {
   text-decoration: none;
+  margin-top:1.5rem;
   margin-right: 1.5rem;
   color: #f5f0e1;
   display: inline-block;
   transition: transform 0.5s;
+  font-size: 3rem;
 }
+
 .socialIcons p i:hover {
   color: #ff6e40;
   transform: translateY(-5px);
@@ -282,6 +283,7 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top:10rem;
 }
 
 /* FLIPCARDS */
@@ -416,6 +418,13 @@ iframe {
  padding: 1.5rem;
   grid-template-areas: 
   'item1 item1 item1 item1';
+}
+
+.titles h3,.titles h4{
+color:#ff6e40;
+}
+.titleDev{
+  color:#ffc13b;
 }
 .diplomasTitle h2{
   background: #ff6e40;
@@ -663,8 +672,8 @@ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
     width:20rem;
   }
 iframe{
-  width:20rem;
- height:13rem;
+  width:35rem;
+ height:15rem;
 }
 .wrapperSocialIcons{
 flex-direction: column;
@@ -672,8 +681,14 @@ flex-direction: column;
 form textarea{
   width:24rem;
 }
+
+
 }
 @media only screen and (max-width: 576px) {
+  .googleMaps {
+
+    margin-top:5rem;
+  }
   html {
     font-size: 56%;
   }
@@ -755,9 +770,22 @@ form textarea{
     grid-template-areas: 
     'item1 item1';
   }
+
+
 }
 /* Small devices ( tablets and large phones, 577px and up) */
 @media only screen and (min-width: 577px) {
+
+  .wrapperContent{
+   
+
+  }
+
+  iframe{
+    height:15rem;
+    width:40rem;
+    margin-bottom: 5rem;
+  }
   .sectionInfo {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: minmax(25rem, 1fr) minmax(25rem, 1fr)
@@ -828,6 +856,7 @@ form textarea{
   .swal2-popup {
     font-size: 1.3rem !important;
   }
+ 
 }
 /* Large devices */
 @media only screen and (max-width: 991px) {
@@ -856,6 +885,18 @@ form textarea{
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .wrapperContent{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+ .socialIcons i, .socialIcons p {
+    margin:inherit;
+
+  } /* 
+  .wrapperContent .googleMaps{
+    margin-right:5rem;
+  } */
   .swal2-popup {
     font-size: 1.6rem !important;
   }
@@ -878,13 +919,15 @@ form textarea{
     justify-content: space-evenly;
     height: 70rem;
   }
+
 }
 /* Extra large devices (large laptops and desktops, 1281px and up) */
 @media only screen and (min-width: 1281px) {
+
   .sectionContact {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(8,1fr);
     grid-template-rows: 60rem; 
-    grid-template-areas: 'item1 item2';
+    grid-template-areas: 'item1 item1 item1 item2 item2 item2 item2 item2';
   }
  /*  .inputBox textarea{
     width:90%;
@@ -899,6 +942,9 @@ form textarea{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 1.5rem;
     column-gap: 1.5rem;
+  }
+  .wrapperContent{
+flex-direction: column;
   }
 }
 /*X-Small 	None 	<576px

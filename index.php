@@ -15,14 +15,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="./node_modules/sweetalert2/dist/sweetalert2.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <script src="https://kit.fontawesome.com/c95e83d52d.js" crossorigin="anonymous" defer></script>
-
 </head>
 
 <body>
@@ -37,8 +34,8 @@
      <?php include 'components/hero.php'; ?>
     <!-- INFO -->
     <?php include 'components/info.php'; ?>
-    <!-- CHRONO -->
-    <?php include 'components/formations.php'; ?>
+    <!-- XP -->
+    <?php include 'components/xp.php'; ?>
     <!-- FLIPCARDS -->
     <?php include 'components/flipcardscontainer.php'; ?>
     <!-- CONTACT -->
@@ -50,7 +47,6 @@
     <!-- ALL SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
     <!--     <script src="assets/js/domready.js"></script>
  -->
     <script src="assets/js/scrolltotop.js"></script>
@@ -63,7 +59,6 @@
     <script src="assets/js/header.js" type="module"></script>
     <script src="assets/js/typewriter.js" type="module"></script>
     <script src="assets/js/swiper.js" type="module"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
@@ -71,5 +66,4 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     
 </body>
-
 </html> 
