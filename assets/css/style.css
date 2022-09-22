@@ -456,11 +456,13 @@ iframe {
   grid-template-areas: 
   'item1 item1 item1 item1';
 }
-.diplomasTitle{
+.diplomasTitle h2{
   background: #ff6e40;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
   text-align: center;
+  margin:0rem;
+  padding:0.5rem;
 }
 .diploma {
   background: #f5f0e1;
@@ -470,7 +472,7 @@ iframe {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width:20rem;
+  width:30rem;
   text-align: center;
 border-top-right-radius: 1.5rem;
 border-top-left-radius: 1.5rem;
@@ -958,7 +960,7 @@ Extra extra large 	xxl 	≥1400px*/
 
 }
 .swiper {
-  width:50rem;
+  width:46rem;
   height: 100%;
   grid-area: item1;
 background: #1e3d59;
@@ -966,13 +968,13 @@ border-top-right-radius: 1.5rem;
 border-top-left-radius: 1.5rem;
 border-bottom-right-radius: 1.5rem;
 border-bottom-left-radius: 1.5rem;
-padding: 1.5rem;
 }
 
 .swiper-slide {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 /* .swiper-wrapper{
   margin: 0;
@@ -986,4 +988,6 @@ padding: 1.5rem;
 .swiper-button-next, .swiper-button-prev{
   color: #ff6e40 !important;
   font-weight: bold;
+  margin: 0;
+  padding:0;
 }
