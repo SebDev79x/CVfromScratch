@@ -32,8 +32,6 @@
             <div class="socialIcons">
                 <p><i class="fa fa-calendar"></i> 10 avril 1979</p>
                 <p><i class="fa fa-car"></i> Permis B + véhicule</p>
-             
-              
             </div>
         </div>
     </article>
@@ -50,7 +48,15 @@
                 Nord.</p>
                 <p>Disponible immédiatement.
             </p>
-
         </div>
+    </article>
+    <article>
+    <div class="item5Sup itemTitle">
+            <h2>CV papier</h2>
+        </div>
+        <div class="item5Inf itemContent">
+    <div class="curriculum"><a href="" download><i class="fas fa-file-download"> CV</i></a>
+</div>
+</div>
     </article>
 </section>

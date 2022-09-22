@@ -8,6 +8,5 @@
     </div>
     <div class="socialIconsFooter">Sébastien Mazur © 2022 </br>Tous droits réservés.</br>
     </div>
-    <div class="socialIconsFooter"><a href="" download class="btn btn2"><i class="fas fa-file-download"> CV</i></a>
-</div>
+
 </footer>
