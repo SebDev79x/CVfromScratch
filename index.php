@@ -35,7 +35,7 @@
     <!-- INFO -->
     <?php include 'components/info.php'; ?>
     <!-- XP -->
-    <?php include 'components/xp.php'; ?>
+    <?php include 'components/swiper.php'; ?>
     <!-- FLIPCARDS -->
     <?php include 'components/flipcardscontainer.php'; ?>
     <!-- CONTACT -->
