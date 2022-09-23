@@ -1,5 +1,5 @@
 <!-- Slider main container -->
-<section class="sectionSwiper" id="sectionSwiper">
+<section class="sectionSwiper anchor" id="sectionSwiper">
 <div class="swiper">
 <div class="diplomasTitle">
             <h2>Diplômes/Expériences</h2>
@@ -9,7 +9,9 @@
     <!-- Slides -->
     <div class="swiper-slide"> 
         <div class="diploma">
-                    <div class="titles">
+
+        <i class="fas fa-user-graduate logoXP"></i>
+                            <div class="titles">
                         <h3>BACCALAURÉAT</h3>
                         <h4>Sciences Eco. & Sociales</h4>
                     </div>
@@ -19,6 +21,7 @@
                 </div>
             </div>
     <div class="swiper-slide"> <div class="diploma">
+    <i class="fas fa-user-graduate logoXP"></i>
                     <div class="titles">
                     <h3>B.T.S.</h3>
                         <h4>Assistant de Gestion PME/PMI</h4>
@@ -30,6 +33,8 @@
                 </div>
             </div>
             <div class="swiper-slide"> <div class="diploma">
+            <i class="fas fa-briefcase logoXP"></i>
+
                     <div class="titles">
                     <h3>2xMoinsCher/Trokers</h3>
                         <h4>Chargé de Clientèle</h4>
@@ -41,6 +46,8 @@
                 </div>
             </div>
             <div class="swiper-slide"> <div class="diploma">
+            <i class="fas fa-briefcase logoXP"></i>
+
                     <div class="titles">
                     <h3>Éducation Nationale</h3>
                         <h4>Assistant d'Éducation</h4>
@@ -51,6 +58,7 @@
                 </div>
             </div>
     <div class="swiper-slide"> <div class="diploma">
+    <i class="fas fa-user-graduate logoXP"></i>
                     <div class="titles">
                     <h3 class="titleDev">TITRE</h3>
                         <h4>Développeur Web & Web Mobile</h4>

@@ -1,4 +1,4 @@
-<section class="sectionContact" id="contact">
+<section class="sectionContact anchor" id="sectionContact">
 
     <div class="wrapperContact">
         <div class="contactTitle">

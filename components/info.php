@@ -1,4 +1,4 @@
-<section class="sectionInfo" id="info">
+<section class="sectionInfo anchor" id="sectionInfo">
     <article class="articleInfo item item1" id="item1">
         <div class="item1Sup itemTitle">
             <h2>Parcours</h2>

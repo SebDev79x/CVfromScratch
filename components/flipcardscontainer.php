@@ -1,4 +1,4 @@
-<section class="sectionFlipCards" id="languages">
+<section class="sectionFlipCards anchor" id="sectionFlipCards">
     <div class="flipCardsTitle">
         <h2>Langages étudiés</h2>
     </div>

@@ -117,7 +117,6 @@ header nav a:hover::after {
   flex-direction: row;
 }
 .welcomeMessage .secondP {
-  margin-left: 30rem;
   color: #f5f0e1;
 }
 .welcomeMessage {
@@ -150,7 +149,7 @@ header nav a:hover::after {
 .sectionInfo {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 20rem 30rem;
+  grid-template-rows: 30rem 30rem;
   row-gap: 2.5rem;
   column-gap: 2.5rem;
   grid-template-areas:
@@ -430,6 +429,7 @@ iframe {
   padding: 0.5rem;
 }
 .diploma {
+  position: relative;
   background: #f5f0e1;
   color: coral;
   height: 80%;
@@ -446,6 +446,12 @@ iframe {
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
 }
+.logoXP{
+  position: absolute;
+  top:1rem;
+  left:1rem;
+  font-size: 3rem;
+}
 .swiper {
   width: 100rem;
   height: 50rem;
@@ -459,6 +465,7 @@ iframe {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .swiper-scrollbar-drag {
   background: #ff6e40 !important;
@@ -567,7 +574,7 @@ iframe {
 }
 textarea {
   height: 15rem;
-  width: 49rem;
+  width: 50rem;
 }
 .inputBox input,
 .inputBox textarea {
@@ -617,13 +624,6 @@ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
 .inputBox textarea:focus {
   border: 2px solid #f5f0e1;
 }
-.inputBoxDuo {
-  border: 2px solid red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 /* SWAL/SweetAlert.js */
 .swal2-shown {
   overflow: unset !important;
@@ -660,14 +660,6 @@ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
 /* MEDIA QUERIES */
 /* Extra small devices (phones, 320px) */
 @media only screen and (min-width: 320px) {
-
-  /*   .swiper {
-    width:33rem;
-  } */
-  /*   .diploma{
-    width:20rem;
-  } */
-
   .wrapperSocialIcons {
     flex-direction: column;
   }
@@ -731,8 +723,8 @@ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
   }
   .welcomeMessage {
     width: 100%;
-    font-size: 2.5rem;
-    margin-left: 5rem;
+    font-size: 2rem;
+    margin-left: 2rem;
   }
   .welcomeMessage .secondP {
     margin-left: 0;
@@ -844,7 +836,7 @@ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
   .welcomeMessage {
     margin-top: 5rem;
     margin-left: 2rem;
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .sectionInfo {
     grid-template-columns: repeat(4, 1fr);
@@ -893,10 +885,6 @@ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
     justify-content: space-evenly;
     align-items: flex-start;
   }
-  /* 
-  .wrapperContent .googleMaps{
-    margin-right:5rem;
-  } */
   .swal2-popup {
     font-size: 1.6rem !important;
   }
@@ -913,12 +901,6 @@ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
 }
 /* Extra large devices (large laptops and desktops, max 1200px) */
 @media only screen and (max-width: 1280px) {
-  /* .diplomas {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 70rem;
-  } */
 }
 /* Extra large devices (large laptops and desktops, 1281px and up) */
 @media only screen and (min-width: 1281px) {
@@ -927,15 +909,6 @@ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
     grid-template-rows: 60rem;
     grid-template-areas: 'item1 item1 item1 item2 item2 item2 item2 item2';
   }
-  /*  .inputBox textarea{
-    width:90%;
-  } */
-  /*   .diplomas {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 30rem;
-  } */
   .flipcards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 1.5rem;
@@ -954,6 +927,9 @@ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
   .socialIcons i {
     margin: 1.5rem;
     font-size: 2.5rem;
+  }
+  .welcomeMessage .secondP {
+    margin-left:23rem;
   }
 }
 /*X-Small 	None 	<576px
