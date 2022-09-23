@@ -11,7 +11,7 @@
                 <i class="fas fa-phone-square-alt"></i>
                 <p>06 15 92 38 65</p>
                 <i class="fas fa-map-marker"></i>
-                                <p>Sébastien Mazur<br>
+                                <p class="address">Sébastien Mazur<br>
                     15 rue de la Croix<br>
                     60640 Quesmy</p>
             </div>
