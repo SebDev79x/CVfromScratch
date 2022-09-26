@@ -9,8 +9,8 @@
     <!-- Slides -->
     <div class="swiper-slide"> 
         <div class="diploma">
-
-        <i class="fas fa-user-graduate logoXP"></i>
+<div class="circle"><i class="fas fa-user-graduate logoXP"></i></div>
+        
                             <div class="titles">
                         <h3>BACCALAURÉAT</h3>
                         <h4>Sciences Eco. & Sociales</h4>
@@ -36,7 +36,7 @@
             <i class="fas fa-briefcase logoXP"></i>
 
                     <div class="titles">
-                    <h3>2xMoinsCher/Trokers</h3>
+                    <h3>2xMoinsCher.com</h3>
                         <h4>Chargé de Clientèle</h4>
                         <h4>Responsable Modération</h4>
                     </div>
@@ -69,6 +69,7 @@
                 </div>
             </div>
             <div class="swiper-slide"> <div class="diploma">
+            <i class="fas fa-user-graduate logoXP"></i>
                     <div class="titles">
                     <h3>Certificat</h3>
                         <h4>POEC React Native</h4>
