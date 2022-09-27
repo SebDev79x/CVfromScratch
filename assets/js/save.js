@@ -1,4 +1,16 @@
 /* ,
+    {
+        "title": "2xMoinsCher",
+        "subtitle": "POEC React Native",
+        "details": [
+          {
+            "year": "2007 - 2012",
+            "name": "Chargé de Clientèle",
+            "location": "Paris, 3ème arr."
+          }
+        ]
+      } */
+/* ,
   "xp": [
     {
       "enterprise": "2xMoinsCher.com",

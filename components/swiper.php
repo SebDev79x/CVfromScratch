@@ -2,46 +2,37 @@
 $xpFile = 'json/xp.json';
 $json = file_get_contents($xpFile);
 $json = json_decode($json);
-
-/* $xpArray = json_decode($json);
-var_dump($xpArray); */
-
 ?>
-<!-- Slider main container -->
 <section class="sectionSwiper anchor" id="sectionSwiper">
+    <!-- Slider container -->
     <div class="swiper">
         <div class="diplomasXp">
             <h2>Diplômes/Expériences</h2>
         </div>
-        <!-- Additional required wrapper -->
+        <!-- Required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-
             <?php  foreach ($json as $diploma) { ?>
             <div class="swiper-slide">
-
-
                 <div class="diploma">
                     <div class="circle">
-                        <i class="fas fa-user-graduate logoXP"></i>
+                        <i class="fas <?php echo $diploma->icon ?>"></i>
                     </div>
                     <div class="titles">
                         <h3> <?php echo $diploma->title ?></h3>
                     </div>
                     <div class="diplomaBlock">
                         <div class="diplomaSubtitle">
-                            <p><?php echo $diploma->diplomaSubtitle ?></p>
+                            <p><?php echo $diploma->subtitle ?></p>
                         </div>
                         <div class="diplomaDetails">
-                            <?php foreach ($diploma->diplomaDetails as $details) { ?>
-                            <?php echo $details->year ?>
-                            <?php echo $details->schoolName ?>
-                            <?php echo $details->location ?>
-                            <?php } ?>
+                            <?php echo $diploma->details->year;?>
+                            <?php echo $diploma->details->location;?>
+                            <?php echo $diploma->details->name;?>
                         </div>
                     </div>
                     <div class="state">
-                        <i class="fas fa-circle-check"></i>
+                        <i class="fas <?php echo $diploma->validated ?>"></i>
                     </div>
                 </div>
             </div>
