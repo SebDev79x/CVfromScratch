@@ -10,7 +10,7 @@
                 <p>sebastien.mazur@wanadoo.fr</p>
                 <i class="fas fa-phone-square-alt"></i>
                 <p>06 15 92 38 65</p>
-                <i class="fas fa-map-marker"></i>
+                <i class="fas fa-location-dot"></i>
                                 <p class="address">Sébastien Mazur<br>
                     15 rue de la Croix<br>
                     60640 Quesmy</p>

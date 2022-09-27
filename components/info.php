@@ -8,7 +8,8 @@
                 développement a été lancé après un bilan de compétences.</br>
                 J'ai obtenu le titre de Développeur Web & Web Mobile en 2020 puis j'ai poursuivi mon apprentissage
                 en autodidacte, codant jour après jour.</br>
-                J'ai également suivi une formation React Native de 3 mois, achevée fin juillet 2022.</p>
+                J'ai également suivi une formation React Native de 3 mois, achevée fin juillet 2022.</br>
+            Le tout via <a href="https://lamanu.fr/" class="lamanuLink">La Manu</a>.</p>
         </div>
     </article>
     <article class="articleInfo item item2">
@@ -52,10 +53,10 @@
     </article>
     <article>
     <div class="item5Sup itemTitle">
-            <h2>CV papier</h2>
+            <h2>CV .pdf</h2>
         </div>
         <div class="item5Inf itemContent">
-    <div class="curriculum"><a href="" download><i class="fas fa-file-download"> CV</i></a>
+    <div class="curriculum"><a href="" download><i class="fas fa-file-download"></i></a>
 </div>
 </div>
     </article>
