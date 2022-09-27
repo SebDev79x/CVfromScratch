@@ -424,14 +424,14 @@ iframe {
 .sectionSwiper {
   padding: 1.5rem;
 }
-.titles h3,
-.titles h4 {
+.title h3,
+.title h4 {
   color: #ff6e40;
   text-decoration-line: underline;
 }
-.titles h3{
-  margin-top: 2rem;
-}
+/* .title h3 {
+  border: 2px solid green;
+} */
 .titleDev {
   color: #ffc13b;
 }
@@ -469,36 +469,62 @@ iframe {
   position: relative;
   background: blanchedalmond;
   height: 80%;
-/*   display: flex;
+  /*   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center; */
   width: 30rem;
   text-align: center;
-
   margin-bottom: 4rem;
   border-top-right-radius: 1.5rem;
   border-top-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
+  overflow-x: hidden;
 }
-.test{
-  color: #ff6e40;
 
-}
-.fa-circle-check{
-
+.fa-circle-check {
   font-size: 3rem;
 }
 .circle {
   position: absolute;
   background: #ff6e40;
-  top: .5rem;
-  left: .5rem;
+  top: 0;
+  left: 0;
   font-size: 3rem;
   border-radius: 1.5rem;
   width: 5rem;
   height: 5rem;
+}
+.titleTest,.titleTest2 {
+  position: absolute;
+  top:0;
+  
+width:15rem;
+} 
+.titleTest{
+  left:-5rem;
+}
+.titleTest2 {
+  right:-5rem;
+}
+.titleTest, .titleTest2{
+  color: #f5f0e1;
+}
+.titleTest p,.titleTest2 p{
+  height:100%;
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 1rem;
+  background: green;
+  text-align: center;
+border-radius: 1.5rem;
+}
+.titleTest p {
+  transform: rotate(-45deg);
+}
+.titleTest2 p {
+  transform: rotate(45deg);
 }
 .logoXP {
   position: absolute;
@@ -508,21 +534,22 @@ iframe {
   color: #f5f0e1;
 }
 .swiper {
-/*   width: 100rem;
- */  height: 35rem;
+  /*   width: 100rem;
+ */
+  height: 35rem;
   background: #1e3d59;
   border-top-right-radius: 1.5rem;
   border-top-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
 }
-.diplomaBlock{
+.diplomaBlock {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height:20rem;
+  height: 20rem;
 }
-.diplomaSubtitle{
+.diplomaSubtitle {
   font-weight: bold;
 }
 .swiper-slide {

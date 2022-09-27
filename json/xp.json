@@ -4,71 +4,72 @@
     "icon": " fa-user-graduate logoXP",
     "subtitle": "Sciences Economiques & Sociales",
     "details": {
-      "year": "1997",
+      "from": "1997",
+      "to": "",
       "name": "Lycée Jean Calvin",
       "location": "Noyon, 60"
     },
     "validated": "fa-circle-check"
-
   },
   {
     "title": "B.T.S.",
     "icon": " fa-user-graduate logoXP",
     "subtitle": "Assistant de Gestion PME/PMI",
     "details": {
-      "year": "2003",
+      "from": "2003",
+      "to": "",
       "name": "AFPI Sifor Oise",
       "location": "Compiègne, 60"
     },
     "validated": "fa-circle-check"
-
   },
   {
-    "title": "Titre",
+    "title": "Titre Professionnel",
     "icon": " fa-user-graduate logoXP",
     "subtitle": "Développeur Web & Web Mobile",
     "details": {
-      "year": "2020",
+      "from": "2020",
+      "to": "",
       "name": "La Manu",
       "location": "Noyon, 60"
     },
     "validated": "fa-circle-check"
-
   },
   {
     "title": "Certificat",
     "icon": " fa-user-graduate logoXP",
     "subtitle": "POEC React Native",
     "details": {
-      "year": "2022",
+      "from": "2022",
+      "to": "",
       "name": "La Manu",
       "location": "Compiègne, 60"
     },
     "validated": ""
-
   },
   {
-    "title": "2x",
+    "title": "2xMoinsCher.com",
     "icon": "fa-briefcase logoXP",
-    "subtitle": "POEC React Native",
+    "subtitle": "Chargé de Clientèle",
     "details": {
-      "year": "2022",
-      "name": "La Manu",
-      "location": "Compiègne, 60"
+      "from": "2007",
+      "to": "2012",
+      "name": "",
+      "location": "Paris, 3ème arr."
     },
     "validated": ""
-
   },
   {
-    "title": "Educ",
+    "title": "Education Nationale",
     "icon": "fa-briefcase logoXP",
-    "subtitle": "POEC React Native",
+    "subtitle": "Assistant d'Éducation",
     "details": {
-      "year": "2022",
-      "name": "La Manu",
-      "location": "Compiègne, 60"
+      "year": "",
+      "from": "2012",
+      "to": "2018",
+      "name": "",
+      "location": "Noyon, 60"
     },
     "validated": ""
-
   }
 ]
