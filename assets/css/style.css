@@ -429,10 +429,13 @@ iframe {
   color: #ff6e40;
   text-decoration-line: underline;
 }
+.titles h3{
+  margin-top: 2rem;
+}
 .titleDev {
   color: #ffc13b;
 }
-.diplomasTitle h2 {
+.diplomasXp h2 {
   background: #ff6e40;
   border-top-left-radius: 1.5rem;
   border-top-right-radius: 1.5rem;
@@ -441,7 +444,7 @@ iframe {
   padding: 0.5rem;
 }
 
-.diploma {
+/* .diploma {
   color: #ff6e40;
 
   position: relative;
@@ -459,12 +462,39 @@ iframe {
   border-top-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
+} */
+.diploma {
+  color: #ff6e40;
+
+  position: relative;
+  background: blanchedalmond;
+  height: 80%;
+/*   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; */
+  width: 30rem;
+  text-align: center;
+
+  margin-bottom: 4rem;
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+.test{
+  color: #ff6e40;
+
+}
+.fa-circle-check{
+
+  font-size: 3rem;
 }
 .circle {
   position: absolute;
   background: #ff6e40;
-  top: 1rem;
-  left: 1rem;
+  top: .5rem;
+  left: .5rem;
   font-size: 3rem;
   border-radius: 1.5rem;
   width: 5rem;
@@ -478,13 +508,22 @@ iframe {
   color: #f5f0e1;
 }
 .swiper {
-  width: 100rem;
-  height: 50rem;
+/*   width: 100rem;
+ */  height: 35rem;
   background: #1e3d59;
   border-top-right-radius: 1.5rem;
   border-top-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
+}
+.diplomaBlock{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height:20rem;
+}
+.diplomaSubtitle{
+  font-weight: bold;
 }
 .swiper-slide {
   display: flex;

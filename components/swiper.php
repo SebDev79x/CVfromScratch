@@ -1,27 +1,55 @@
+<?php
+$xpFile = 'json/xp.json';
+$json = file_get_contents($xpFile);
+$json = json_decode($json);
+
+/* $xpArray = json_decode($json);
+var_dump($xpArray); */
+
+?>
 <!-- Slider main container -->
 <section class="sectionSwiper anchor" id="sectionSwiper">
     <div class="swiper">
-        <div class="diplomasTitle">
+        <div class="diplomasXp">
             <h2>Diplômes/Expériences</h2>
         </div>
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
+
+            <?php  foreach ($json as $diploma) { ?>
             <div class="swiper-slide">
+
+
                 <div class="diploma">
                     <div class="circle">
                         <i class="fas fa-user-graduate logoXP"></i>
                     </div>
                     <div class="titles">
-                        <h3>BACCALAURÉAT</h3>
-                        <h4>Sciences Eco. & Sociales</h4>
+                        <h3> <?php echo $diploma->title ?></h3>
                     </div>
-                    <p>1997</br>
-                        Lycée Jean Calvin</br>
-                        Noyon, 60</p>
+                    <div class="diplomaBlock">
+                        <div class="diplomaSubtitle">
+                            <p><?php echo $diploma->diplomaSubtitle ?></p>
+                        </div>
+                        <div class="diplomaDetails">
+                            <?php foreach ($diploma->diplomaDetails as $details) { ?>
+                            <?php echo $details->year ?>
+                            <?php echo $details->schoolName ?>
+                            <?php echo $details->location ?>
+                            <?php } ?>
+                        </div>
+                    </div>
+                    <div class="state">
+                        <i class="fas fa-circle-check"></i>
+                    </div>
                 </div>
             </div>
-            <div class="swiper-slide">
+            <?php } ?>
+
+        </div>
+
+        <!-- <div class="swiper-slide">
                 <div class="diploma">
                     <div class="circle"><i class="fas fa-user-graduate logoXP"></i></div>
                     <div class="titles">
@@ -85,7 +113,7 @@
                         Compiègne, 60</p>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 

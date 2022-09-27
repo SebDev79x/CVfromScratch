@@ -1,0 +1,48 @@
+[
+  
+    {
+      "title": "Baccalauréat",
+      "diplomaSubtitle": "Sciences Economiques & Sociales",
+      "diplomaDetails": [
+        {
+          "year": "1997",
+          "schoolName": "Lycée Jean Calvin",
+          "location": "Noyon, 60"
+        }
+      ]
+    },
+    {
+      "title": "B.T.S.",
+      "diplomaSubtitle": "Assistant de Gestion PME/PMI",
+      "diplomaDetails": [
+        {
+          "year": "2003",
+          "schoolName": "AFPI Sifor Oise",
+          "location": "Compiègne, 60"
+        }
+      ]
+    },
+    {
+      "title": "Titre",
+      "diplomaSubtitle": "Développeur Web & Web Mobile",
+      "diplomaDetails": [
+        {
+          "year": "2020",
+          "schoolName": "La Manu",
+          "location": "Noyon, 60"
+        }
+      ]
+    },
+    {
+      "title": "Certificat",
+      "diplomaSubtitle": "POEC React Native",
+      "diplomaDetails": [
+        {
+          "year": "2022",
+          "schoolName": "La Manu",
+          "location": "Compiègne, 60"
+        }
+      ]
+    }
+  
+]
