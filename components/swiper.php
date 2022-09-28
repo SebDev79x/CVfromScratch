@@ -15,16 +15,14 @@ $json = json_decode($json);
             <?php  foreach ($json as $diploma) { ?>
             <div class="swiper-slide">
                 <div class="diploma">
-                    <div class="circle">
-                        <i class="fas <?php echo $diploma->icon; ?>"></i>
-                    </div>
+                    
 
-                    <div class="titleTest">
+                    <div class="ribbon">
                         <p> <?php echo $diploma->details->from ?></p>
                     </div>
                     <?php 
                         if($diploma->details->to !== "") :?>
-                    <div class="titleTest2">
+                    <div class="ribbon2">
                         <p>
                             <?php  echo $diploma->details->to; ?>
                         </p>
@@ -32,6 +30,9 @@ $json = json_decode($json);
                     <?php  endif;
                          ?>
                     <div class="diplomaBlock">
+                    <div class="circle">
+                        <i class="fas <?php echo $diploma->icon; ?>"></i>
+                    </div>
                         <div class="title">
                             <h3> <?php echo $diploma->title; ?></h3>
                         </div>
