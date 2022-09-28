@@ -465,8 +465,8 @@ iframe {
 } */
 .diploma {
   position: relative;
-  background: #f5f0e1;
-  color: #ff6e40;
+  background: #1e3d59;
+  color: #f5f0e1;
   height: 80%;
   width: 30rem;
   text-align: center;
@@ -475,6 +475,7 @@ iframe {
   border-top-left-radius: 1.5rem;
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
+  border:2px solid #f5f0e1;
     overflow-x: hidden;
 
 }
@@ -505,7 +506,8 @@ iframe {
 .ribbon p,
 .ribbon2 p {
   font-weight: bold;
-  background: #ff6e40;
+  background: #f5f0e1;
+  color:#1e3d59;
   text-align: center;
   border-radius: 1.5rem;
   width:15rem;
@@ -518,7 +520,7 @@ iframe {
   transform: rotate(45deg);
 }
 .logoXP {
-  color: #ff6e40;
+  color: #f5f0e1;
 }
 .swiper {
   height: 35rem;
