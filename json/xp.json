@@ -9,7 +9,7 @@
       "name": "Lycée Jean Calvin",
       "location": "Noyon, 60"
     },
-    "validated": "fa-circle-check"
+    "validated": "fa-circle-check validated"
   },
   {
     "title": "B.T.S.",
@@ -21,7 +21,7 @@
       "name": "AFPI Sifor Oise",
       "location": "Compiègne, 60"
     },
-    "validated": "fa-circle-check"
+    "validated": "fa-circle-check validated"
   },
   {
     "title": "Titre Professionnel",
@@ -33,7 +33,7 @@
       "name": "La Manu",
       "location": "Noyon, 60"
     },
-    "validated": "fa-circle-check"
+    "validated": "fa-circle-check validated"
   },
   {
     "title": "Certificat",

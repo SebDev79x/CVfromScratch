@@ -39,6 +39,8 @@
     <?php include 'components/swiper.php'; ?>
     <!-- FLIPCARDS -->
     <?php include 'components/flipcardscontainer.php'; ?>
+    <!-- PROJECTS -->
+    <?php include 'components/projects.php'; ?>
     <!-- CONTACT -->
     <?php include 'components/contact.php'; ?>
     <!-- BUTTON TO TOP -->

@@ -12,23 +12,21 @@ $json = json_decode($json);
         <!-- Required wrapper -->
         <div class="swiper-wrapper">
             <!-- Slides -->
-            <?php  foreach ($json as $diploma) { ?>
+            <?php foreach ($json as $diploma) { ?>
             <div class="swiper-slide">
                 <div class="diploma">
                     
 
                     <div class="ribbon">
-                        <p> <?php echo $diploma->details->from ?></p>
+                        <p> <?php echo $diploma->details->from; ?></p>
                     </div>
-                    <?php 
-                        if($diploma->details->to !== "") :?>
+                    <?php if ($diploma->details->to !== ''): ?>
                     <div class="ribbon2">
                         <p>
-                            <?php  echo $diploma->details->to; ?>
+                            <?php echo $diploma->details->to; ?>
                         </p>
                     </div>
-                    <?php  endif;
-                         ?>
+                    <?php endif; ?>
                     <div class="diplomaBlock">
                     <div class="circle">
                         <i class="fas <?php echo $diploma->icon; ?>"></i>
@@ -37,15 +35,15 @@ $json = json_decode($json);
                             <h3> <?php echo $diploma->title; ?></h3>
                         </div>
                         <div class="diplomaSubtitle">
-                            <p><?php echo $diploma->subtitle ?></p>
+                            <p><?php echo $diploma->subtitle; ?></p>
                         </div>
                         <div class="diplomaDetails">
-                            <?php echo $diploma->details->location;?>
-                            <?php echo $diploma->details->name;?>
+                        <p><?php echo $diploma->details->name; ?></p> 
+                            <p><?php echo $diploma->details->location; ?></p>
                         </div>
                     </div>
                     <div class="state">
-                        <i class="fas <?php echo $diploma->validated ?>"></i>
+                        <i class="fas <?php echo $diploma->validated; ?>" title="Diplôme obtenu"></i>
                     </div>
                 </div>
             </div>

@@ -10,3 +10,4 @@ window.onload = jobAnimation()
 setInterval(()=>{
     jobAnimation()
 },30000)
+
