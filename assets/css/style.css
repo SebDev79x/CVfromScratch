@@ -158,8 +158,8 @@ header nav a:hover::after {
   row-gap: 4.5rem;
   column-gap: 2.5rem;
   grid-template-areas:
-    'item1 item1 item5 item2'
-    'item3 . item4 item4';
+    'item1 item1 item4 item4'
+    'item2 item3 item5 item6';
   padding: 3rem 1.5rem;
 }
 .lamanuLink {
@@ -209,6 +209,12 @@ header nav a:hover::after {
 }
 .item4 {
   grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+}
+.item6 {
+  grid-area: item6;
 }
 .itemTitle {
   background: #ff6e40;
@@ -343,6 +349,9 @@ iframe {
   -webkit-transform-style: preserve-3d;
 }
 .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.transformInner {
   transform: rotateY(180deg);
 }
 .flip-card-front,
@@ -860,13 +869,17 @@ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows:
       minmax(25rem, 1fr) minmax(25rem, 1fr) minmax(25rem, 1fr)
-      minmax(25rem, 1fr) minmax(25rem, 1fr);
+      minmax(25rem, 1fr) minmax(25rem, 1fr) minmax(25rem, 1fr);
     grid-template-areas:
       'item1 item1'
       'item2 item2'
       'item3 item3'
       'item4 item4'
-      'item5 item5';
+      'item5 item5'
+      'item6 item6';
+  }
+  .itemTitle h2{
+    font-size: 2rem;
   }
   .myJob {
     font-size: 3rem;
@@ -904,13 +917,14 @@ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows:
       minmax(25rem, 1fr) minmax(25rem, 1fr)
-      minmax(25rem, 1fr) minmax(25rem, 1fr) minmax(25rem, 1fr);
+      minmax(25rem, 1fr) minmax(25rem, 1fr) minmax(25rem, 1fr) minmax(25rem, 1fr);
     grid-template-areas:
       'item1 item1'
       'item2 item2'
       'item3 item3'
       'item4 item4'
-      'item5 item5';
+      'item5 item5'
+      'item6 item6';
   }
   .top {
     font-size: 1rem;
@@ -947,6 +961,9 @@ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
 }
 /* Medium devices (768px and up) */
 @media only screen and (min-width: 768px) {
+  .itemTitle h2{
+    font-size: 2.5rem;
+  }
   .welcomeMessage .secondP {
     margin-left: 10rem;
   }
@@ -959,8 +976,8 @@ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: minmax(25rem, 1fr) minmax(25rem, 1fr);
     grid-template-areas:
-      'item1 item1 item5 item3'
-      'item4 item4 item2 .';
+      'item1 item1 item4 item4'
+      'item2 item3 item5 item6';
   }
   .swal2-popup {
     font-size: 1.3rem !important;

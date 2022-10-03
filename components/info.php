@@ -49,7 +49,7 @@
                 Disponible immédiatement.</p>
         </div>
     </article>
-    <article>
+    <article class="articleInfo item item5">
         <div class="item5Sup itemTitle">
             <h2>CV .pdf</h2>
         </div>
@@ -57,6 +57,19 @@
             <div class="curriculum"><a href="./documents/SébastienMazurCV.pdf" download="CV_Sébastien_Mazur"><i
                         class="fas fa-file-download"></i></a>
             </div>
+        </div>
+    </article>
+    <article class="articleInfo item item6">
+        <div class="item6Sup itemTitle">
+            <h2>Complément</h2>
+        </div>
+        <div class="item6Inf itemContent">
+            <ul>
+                <li>Esprit d'équipe</li>
+                <li>Autonome</li>
+                <li>Discipliné</li>
+                <li>Tenace</li>
+            </ul>
         </div>
     </article>
 </section>

@@ -1,4 +1,9 @@
 // Ajoute une classe à un élément
+/**
+ * 
+ * @param {element pointé} element 
+ * @param {classe à ajouter} classToAdd 
+ */
 export const addClass = (element, classToAdd) => {
     element.classList.add(classToAdd);
 }
