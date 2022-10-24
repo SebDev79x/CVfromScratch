@@ -175,23 +175,33 @@ header nav a:hover::after {
   justify-content: center;
   align-items: center;
 }
-/* + icons FOOTER*/
+.miscInfo{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly ;
+}
+.miscInfo p i{
+  font-size: 3rem;
+
+}
 .curriculum a i,
-.socialIconsFooter a i {
+.socialIconsInfo a i {
   text-decoration: none;
-  font-size: 2rem;
-  margin-right: 15px;
+  font-size: 3rem;
   color: #f5f0e1;
   transition: transform 0.5s;
 }
 .curriculum a i:hover,
-.socialIconsFooter a i:hover {
+.socialIconsInfo a i:hover {
   color: #ff6e40;
   transform: translateY(-5px);
 }
-.curriculum a i {
-  font-size: 5rem;
+.socialIconsInfo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+
 .sectionInfo > article {
   border-radius: 1.5rem;
 }
@@ -247,7 +257,11 @@ h3 {
   overflow: hidden;
   min-height: 90%;
 }
-
+.item5Inf{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 /* CONTACT */
 .sectionContact {
   display: grid;
@@ -422,8 +436,10 @@ iframe {
 .arrowClick2 {
   position: absolute;
   right: 1rem;
-  bottom: 0.2rem;
+  bottom: 0.8rem;
   cursor: pointer;
+  font-size: 2rem;
+
 }
 .spanPercent {
   font-size: 2rem;
@@ -792,6 +808,11 @@ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
   form textarea {
     width: 24rem;
   }
+  .arrowClick,.arrowClick2 {
+bottom:0.3rem;
+font-size: 1.8rem;
+
+}
 }
 @media only screen and (max-width: 576px) {
   iframe {
@@ -916,7 +937,7 @@ textarea:not(:placeholder-shown) ~ span.spanAnimlabel {
   .sectionInfo {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows:
-      minmax(25rem, 1fr) minmax(25rem, 1fr)
+      minmax(10rem, 1fr) minmax(10rem, 1fr)
       minmax(25rem, 1fr) minmax(25rem, 1fr) minmax(25rem, 1fr) minmax(25rem, 1fr);
     grid-template-areas:
       'item1 item1'
@@ -1072,3 +1093,34 @@ Medium 	md 	≥768px
 Large 	lg 	≥992px
 Extra large 	xl 	≥1200px
 Extra extra large 	xxl 	≥1400px*/
+
+.item2Inf{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 25% 50% 25%;
+  grid-template-areas: 'item1 item2'
+  'item5 item5'
+  'item3 item4';
+}
+.softskills{
+  text-align: center;
+}
+.softskills1{
+  grid-area: item1;
+}
+.softskills2{
+  grid-area: item2;
+}
+.iconSoftskills{
+  grid-area: item5;
+}
+.softskills3{
+  grid-area: item3;
+}
+.softskills4{
+  grid-area: item4;
+}
+.squareArrows{
+  rotate:45deg;
+  font-size: 5rem;
+}
