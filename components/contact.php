@@ -1,19 +1,21 @@
 <section class="sectionContact anchor" id="sectionContact">
-
     <div class="wrapperContact">
         <div class="contactTitle">
             <h2>Coordonnées</h2>
         </div>
-        <div class="wrapperContent">
-            <div class="socialIcons">
-                <i class="fas fa-envelope"></i>
-                <p>sebastien.mazur@wanadoo.fr</p>
-                <i class="fas fa-phone-square-alt"></i>
-                <p>06 15 92 38 65</p>
-                <i class="fas fa-location-dot"></i>
-                                <p class="address">Sébastien Mazur<br>
-                    15 rue de la Croix<br>
-                    60640 Quesmy</p>
+        <div class="wrapperContentInfo">
+            <div class="wrapperCoords">
+                <div>
+                    <p><i class="fas fa-envelope" style="font-size:2.8rem"></i></p>
+                    <p><i class="fas fa-phone-square-alt" style="font-size:2.8rem"></i></p>
+                    <p><i class="fas fa-location-dot" style="font-size:2.8rem"></i></p>
+                </div>
+                <div>
+                    <p class="emailCoords coords">sebastien.mazur@wanadoo.fr</p>
+                    <p class="phoneCoords coords">06 15 92 38 65</p>
+                    <address class="addressCoords coords">Sébastien Mazur<br> 15 rue de la Croix<br> 60640 Quesmy (Hauts-de-France, Oise)
+                    </address>
+                </div>
             </div>
             <div class="googleMaps">
                 <iframe

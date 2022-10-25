@@ -1,29 +1,27 @@
-// Display error or success message in p (not span) form
+// Get all input
+const inputs = document.querySelectorAll('.field')
+// Get all spanForm
 const spanForm = document.querySelectorAll('.spanForm')
-// Convert Nodelist in array
+// Convert spanForm Nodelist in array
 const spansAsArray = Array.from(spanForm)
 // Get form element
 const formX = document.getElementById('form')
-
 // FUNCTION Check if message == "Champ correct" => boolean
 const checkString = (string) => {
     return string == "Champ correct"
 }
-
 // FUNCTION Toggle classes to hide messages if form is ok after submit
-const hideSpansIfFormOk = (array) => {
+const hideSpans = (array) => {
     return array.map((e, i) => {
         e.classList.toggle('fade')
     })
 }
-
 // States
 let isFormOk = false
 let stateX = false
 
 // FUNCTION Send an email
 const sendEmail = (data) => {
-    console.log("sendMaildata", data);
     Email.send({
         Host: "smtp.elasticemail.com",
         Username: "professeurchaos79@gmail.com",
@@ -33,7 +31,7 @@ const sendEmail = (data) => {
         Subject: `${data.subject}`,
         Body: `Prénom : ${data.firstName} </br>
         Nom : ${data.lastName} </br>
-        Téléphone : ${data.email} </br>
+        Email : ${data.email} </br>
         Téléphone : ${data.phone} </br>
         Sujet : ${data.subject} </br>
         Message : ${data.messageContact}`
@@ -60,11 +58,9 @@ const fireSwal1 = (stateX, userData) => {
             // CONFIRMATION SOUMISSION FORM
             if (action.isConfirmed) {
                 stateX = true
-                console.log("stateX devient true", stateX);
                 if (stateX) {
                     // ENVOI MAIL
                     sendEmail(userData)
-                    console.log("On envoie le mail");
                     // POP UP INFORMATION ENVOI MAIL 
                     fireSwal2()
                 }
@@ -92,7 +88,7 @@ const fireSwal2 = () => {
             icon: 'success',
         })
             .then((action) => {
-                hideSpansIfFormOk(spansAsArray)
+                hideSpans(spansAsArray)
                 formX.reset()
                
             })
@@ -116,10 +112,11 @@ const fetchDataFromForm = async (formatedFormData) => {
                 // https://softauthor.com/javascript-htmlcollection-vs-nodelist/
                 const message = Object.values(data.message)
                 const userInfo = data.myData
-                spansAsArray.forEach(function (el, i) {
+                spansAsArray.forEach( (el, i) =>{
                     // Change message color
                     const toggleColor = () => {
                         spansAsArray[i].style.color = message[i] == "Champ correct" ? "#f5f0e1" : "#ffc13b"
+                        inputs[i].style.border = message[i] == "Champ correct" ? "2px solid #f5f0e1" : "2px solid #ffc13b"
                     }
                     toggleColor()
                     // Display message in p
@@ -132,7 +129,7 @@ const fetchDataFromForm = async (formatedFormData) => {
             })
             .catch((err) => console.log("err", err))
     } catch (err) {
-        console.log(err, "erreur du try catch");
+        return err
     }
 }
 

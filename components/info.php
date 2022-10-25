@@ -24,23 +24,21 @@
 
             <p class="softskills3 softskills">Discipliné</p>
             <p class="softskills4 softskills">Tenace</p>
-            <!--  <ul>
-                <li>Esprit d'équipe</li>
-                <li>Autonome</li>
-                <li>Discipliné</li>
-                <li>Tenace</li>
-            </ul> -->
-
         </div>
     </article>
     <article class="articleInfo item item3">
         <div class="item3Sup itemTitle">
             <h2>Informations</h2>
         </div>
-        <div class="item3Inf itemContent miscInfo">
-
-            <p><i class="fa fa-calendar"></i> 10 avril 1979</p>
-            <p><i class="fa fa-car"></i> Permis B + véhicule</p>
+        <div class="item3Inf miscInfo">
+            <div class="miscInfoDetails">
+                <p class="pMiscInfoDetails"><i class="fa fa-car"></i><span class="spanIcon">Permis B + véhicule</span>
+                </p>
+            </div>
+            <div class="miscInfoDetails">
+                <p class="pMiscInfoDetails"><i class="fa-solid fa-cake-candles"></i><span class="spanIcon">10 avril
+                        1979</span></p>
+            </div>
         </div>
     </article>
     <article class="articleInfo item item4">
@@ -58,13 +56,13 @@
     </article>
     <article class="articleInfo item item5">
         <div class="item5Sup itemTitle">
-            <h2>Curriculum Vitae</h2>
+            <h2>C.V.</h2>
         </div>
-        <div class="item5Inf itemContent">
-            <p>Afficher le pdf :</p>
-            <div class="curriculum">
-                <a href="./documents/SébastienMazurCV.pdf" download="CV_Sébastien_Mazur">
-                    <i class="fas fa-file-download"></i></a>
+        <div class="item5Inf socialNetwork">
+            <div class="iconWrapper">
+                <p>Format .pdf</p>
+                <p><a href="./documents/SébastienMazurCV.pdf" download="CV_Sébastien_Mazur" target="_blank">
+                        <i class="fas fa-file-download iconIllustration"></i></a></p>
             </div>
         </div>
     </article>
@@ -72,10 +70,17 @@
         <div class="item6Sup itemTitle">
             <h2>Complément</h2>
         </div>
-        <div class="item6Inf itemContent socialIconsInfo">
-            <a href="https://www.linkedin.com/in/s%C3%A9bastien-mazur-a1ab794a/" target="_blank"><i
-                    class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/SebDev79x" target="_blank"><i class="fab fa-github"></i></a>
+        <div class="item6Inf socialNetwork">
+            <div class="iconWrapper">
+                <p>Linkedin</p>
+                <p><a href="https://www.linkedin.com/in/s%C3%A9bastien-mazur-a1ab794a/" target="_blank"><i
+                            class="fab fa-linkedin iconIllustration"></i></a></p>
+            </div>
+            <div class="iconWrapper">
+                <p>GitHub</p>
+                <p><a href="https://github.com/SebDev79x" target="_blank"><i
+                            class="fab fa-github iconIllustration"></i></a></p>
+            </div>
             <!--    <a><i class="fab fa-facebook"></i></a>
         <a><i class="fab fa-instagram"></i></a>
         <a><i class="fab fa-twitter"></i></a> -->

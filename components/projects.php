@@ -1,4 +1,4 @@
-<section class="sectionProjects anchor">
+<!-- <section class="sectionProjects anchor">
 <div class="projectsTitle">
             <h2>Projets personnels</h2>
         </div>
@@ -11,4 +11,4 @@
         </div>
         </div>
         
-</section>
+</section> -->
